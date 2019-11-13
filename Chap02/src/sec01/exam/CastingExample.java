@@ -17,8 +17,26 @@ public class CastingExample {
 		double doubleValue = 3.14 ; 
 		intValue = (int) doubleValue;
 		
+	
+		int i = 2;
+		i = 1;
 		
 		
-		System.out.println(intValue);
+		double num22 =  Long.MAX_VALUE;
+		System.out.println(num22);
+		System.out.println(i);
+		
+		
+		int vluAfter = 0 ;
+		long vluBefore = 0 ;
+		char cjrAfter = 'A' ;
+		
+		System.out.println("First reference : "+ vluAfter++); // 0 print 1 store 
+		System.out.println("First reference : "+ --vluBefore);  // -1 print -1 store
+		System.out.println("First reference : "+ cjrAfter++); // A print B store
+		
+		System.out.println("Second reference : "+ vluAfter);
+		System.out.println("Second reference : "+ vluBefore);
+		System.out.println(Integer.toBinaryString((~0b01<<2))+" Second reference : "+ cjrAfter);
 	}
 }
