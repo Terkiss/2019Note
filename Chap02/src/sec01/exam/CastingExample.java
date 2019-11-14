@@ -38,5 +38,16 @@ public class CastingExample {
 		System.out.println("Second reference : "+ vluAfter);
 		System.out.println("Second reference : "+ vluBefore);
 		System.out.println(Integer.toBinaryString((~0b01<<2))+" Second reference : "+ cjrAfter);
+		
+		int n1 = 7 ;
+		int n2 = 3 ;
+		
+		int result = 0 ;
+		
+		System.out.println("µ¡¼À" + (n1 + n2) ) ;
+		System.out.println("“–¼À" + (n1 - n2) ) ;
+		System.out.println("³ª´°¼À"+ (n1 / n2) ) ;
+		System.out.println("³ª¸ÓÁö"+ (n1 % n2) );
+		
 	}
 }
