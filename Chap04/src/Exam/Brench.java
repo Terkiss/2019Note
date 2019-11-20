@@ -80,16 +80,22 @@ public class Brench {
 		switch(op)
 		{
 			case '+':
+				System.out.println(leftOperator +" "+op+" "+rightOperator+"  =  "+ (leftOperator+rightOperator) );
 				break;
 			case '-':
+				System.out.println(leftOperator +" "+op+" "+rightOperator+"  =  "+ (leftOperator-rightOperator) );
 				break;
 			case '*':
+				System.out.println(leftOperator +" "+op+" "+rightOperator+"  =  "+ (leftOperator*rightOperator) );
 				break;
 			case '/':
+				System.out.println(leftOperator +" "+op+" "+rightOperator+"  =  "+ (leftOperator/rightOperator) );
 				break;
 			case '%':
+				System.out.println(leftOperator +" "+op+" "+rightOperator+"  =  "+ (leftOperator%rightOperator) );
 				break;
 			default:
+				System.out.printf("연산자를 잘못 입력 하셧습니다");
 				break;
 		}
 	}
