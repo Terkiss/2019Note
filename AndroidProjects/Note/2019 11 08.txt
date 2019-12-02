@@ -1,7 +1,0 @@
-setContentView :: 지정 화면 로드
-        // maketext(어디에다, 텍스트 내용, 지속시간)
-        // getApplicationContext() 현재 화면의 위치 가져옴
-
-Toast.MakeText.Show() // 보여준다
-
-Intent : 
