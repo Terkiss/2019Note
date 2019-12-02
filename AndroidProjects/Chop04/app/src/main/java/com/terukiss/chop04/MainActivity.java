@@ -17,20 +17,18 @@ public class MainActivity extends AppCompatActivity {
 
        Button button = (Button)  findViewById(R.id.button);
 
-        button.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
-                Toast.makeText(getApplicationContext(), "현재 시간은 10시 22분 입니다.", Toast.LENGTH_LONG).show();
-            }
-         //   OnClick2();
-        });
+
+       button.setOnClickListener( new View.OnClickListener()
+                                  {
+                                      public void onClick(View v)
+                                      {
+                                          Toast.makeText(getApplicationContext(), "버튼 인력 테스트 중", Toast.LENGTH_LONG).show();
+                                      }
+                                  }
+       );
 
 
 
     }
-    public  void OnClick2(View v)
-    {
-        Toast.makeText(getApplicationContext(), "첫번쨰 버튼입니다.", Toast.LENGTH_SHORT).show();
-    }
+
 }
