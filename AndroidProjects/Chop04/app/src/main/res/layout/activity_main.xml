@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:orientation="vertical"
     android:padding="30dp"
     tools:context=".MainActivity">
+=======
+
+    android:orientation="vertical"
+
+    >
+>>>>>>> 36af7b48c2767dfe894c4d56512dab4bce1d3256
 
 
 
@@ -108,6 +113,7 @@
     <!-- 이렇게 하는게 주석 입니다 . 비ㅣ ㄴ임ㅇ -->
     <!--
     <Button
+<<<<<<< HEAD
         android:id="@+id/dd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -192,4 +198,43 @@
             android:text="남성 "
             />
     -->
+=======
+        android:id="@+id/button"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:text="Button"
+        android:enabled="false"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_margin="20dp"
+        android:text="Button"
+
+        />
+    <!-- visibility 속성은 위젯을 보일 것인지 여부를 결정 디폴트인 visible은 보이는것 invisible 과 gone 은 안보이는 상태 -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        android:hint="여기다 적어 주세요"/>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_margin="20dp"
+        android:text="Button"
+        android:clickable="false"
+        android:rotation="45"
+        />
+>>>>>>> 36af7b48c2767dfe894c4d56512dab4bce1d3256
 </LinearLayout>
