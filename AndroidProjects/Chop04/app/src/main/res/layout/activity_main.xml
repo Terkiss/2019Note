@@ -4,12 +4,192 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
     tools:context=".MainActivity">
+
+
+
+
+    <!--
+    텍스트 뷰 속성을 변경하는 예제
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 1번"
+        android:id="@+id/T1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2번"
+        android:id="@+id/T2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3번"
+        android:id="@+id/T3"
+        />
+
+
+
+    <!--
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="text size property"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#ff00ff"
+
+        android:text = "컬러 스타일 테스트 "
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text=" italic 테스트"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" bold 테스트"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text=" normal  테스트"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:typeface="serif"
+        android:text="typeface test"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:typeface="serif"
+        android:text="serif test"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:typeface="sans"
+        android:text="sans test"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:typeface="monospace"
+        android:text="typeface test"
+        />
+
+
+    -->
+    <!-- 이렇게 하는게 주석 입니다 . 비ㅣ ㄴ임ㅇ -->
+    <!--
+    <Button
+        android:id="@+id/dd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/r_ninety"
+        />
+
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="#8888ff"
+        android:text="안녕하세요"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="첫번쨰 버튼" />
+        android:layout_margin="3dp"
+        android:ems="10"
+        android:hint="여기에 채우세요"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/android_button" />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="text Size 속성 속성값  30 dp"
+        />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textColor="#00ff00"
+        android:text = "텍스트뷰 컬러 속성"
+        />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+
+        android:text="텍스트뷰 스타일 속성"
+        />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:text="typeface 속성"
+        />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:text="singleline 속성 singleline 속성"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="성별 선택"
+
+        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여성"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남성 "
+            />
+    -->
 </LinearLayout>
