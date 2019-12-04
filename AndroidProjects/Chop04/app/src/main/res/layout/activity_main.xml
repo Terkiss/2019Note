@@ -2,16 +2,11 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
+
     android:orientation="vertical"
     android:padding="30dp"
-    tools:context=".MainActivity">
-=======
+   >
 
-    android:orientation="vertical"
-
-    >
->>>>>>> 36af7b48c2767dfe894c4d56512dab4bce1d3256
 
 
 
@@ -20,24 +15,42 @@
     텍스트 뷰 속성을 변경하는 예제
     -->
     <TextView
+        android:id="@+id/T1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" 1번"
-        android:id="@+id/T1"
+
         />
     <TextView
+        android:id="@+id/T2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2번"
-        android:id="@+id/T2"
+
         />
     <TextView
+        android:id="@+id/T3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3번"
-        android:id="@+id/T3"
+
         />
 
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+
+
+        android:background="#ff00ff"
+
+        android:text="동해물과                     백두산이"
+        android:lineSpacingExtra="20dp"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
 
 
     <!--
@@ -236,5 +249,5 @@
         android:clickable="false"
         android:rotation="45"
         />
->>>>>>> 36af7b48c2767dfe894c4d56512dab4bce1d3256
+
 </LinearLayout>
