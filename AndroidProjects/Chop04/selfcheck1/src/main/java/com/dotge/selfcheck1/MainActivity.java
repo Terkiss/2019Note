@@ -47,12 +47,17 @@ public class MainActivity extends AppCompatActivity {
                 agetv.setText(data2 + String.valueOf(etage.getText()));
                 adresstv.setText(data3 + String.valueOf( etadress.getText()));
 
-                float touchXpos;
-                float touchYpos ;
                 Toast.makeText(getApplicationContext(), "해내땅 해내땅", Toast.LENGTH_LONG).show();
             }
         });
 
+
+
+
+    }
+    public void onClose(View v)
+    {
+        finish();
     }
 
     public static int convert2Int(Object data)

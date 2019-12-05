@@ -45,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 touchCount.setText(pos);
 
 
+                //if(event.getAction() == MotionEvent.Action_Down)
+               // {
+                  //  double x = event.getX();
+                   // double y = event.getY();
+
+
+               //}
 
 
                 return false;
@@ -52,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void onClose(View v)
+    {
+        finish();
     }
 
 }

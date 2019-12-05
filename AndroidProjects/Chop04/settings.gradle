@@ -1,2 +1,2 @@
-include ':app', ':myapp', ':selfcheck1', ':selfcheck2'
+include ':app', ':myapp', ':selfcheck1', ':selfcheck2', ':self4_3'
 rootProject.name='Chop04'

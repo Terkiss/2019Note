@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText inputNum2        =       (EditText) findViewById(R.id.txtnum2)   ;
         final TextView result           =       (TextView) findViewById(R.id.resultcal) ;
 
+
         Button add      =       (Button) findViewById(R.id.calulatebtn)     ;
         operatorView    =       (Button) findViewById(R.id.operaterView)    ;
         plusBtn         =       (Button) findViewById(R.id.plusbtn)         ;
@@ -111,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                         int number2 = convert2Int( inputNum2.getText() );
                         int sum = number1 + number2;
                         result.setText(String.valueOf(sum));
-
+ // 010 36739644
                         operatorView.setVisibility(View.VISIBLE);
                         plusBtn.setVisibility(View.INVISIBLE);
                         minusBtn.setVisibility(View.INVISIBLE);
