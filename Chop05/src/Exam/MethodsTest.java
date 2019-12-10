@@ -17,7 +17,13 @@ public class MethodsTest {
 		print("좋은 아침 입니다. \n");
 		print("제나이는"+age+"세 입니다\n");
 		print("저의 키는 %5.2f \n", height);
+		print("zz%d %d %d %d %d",1 , 2 ,3 ,4 ,5);
 	}
+	
+	
+	
+	
+	
 	
 	
 	
