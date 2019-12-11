@@ -1,0 +1,2 @@
+include ':app', ':selfcheck'
+rootProject.name='J_chop06'
