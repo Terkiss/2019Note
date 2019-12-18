@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
                 layout.addView(textView, params);
 
-                txt_Count.setText(count+" 영");
+                txt_Count.setText(persons.size()+" 영");
             }
         });
 

@@ -1,2 +1,2 @@
-include ':app', ':selfcheck', ':j_chap12', ':j_chap12selftest'
+include ':app', ':selfcheck', ':j_chap12', ':j_chap12selftest', ':mylanchroolet'
 rootProject.name='J_chop06'
