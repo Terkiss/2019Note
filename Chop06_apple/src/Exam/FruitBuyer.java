@@ -6,21 +6,32 @@ public class FruitBuyer {
 	
 	public FruitBuyer(int _myMoney)
 	{
-		this.numOfApple = 0;
-		this.myMoney = _myMoney;
+		numOfApple = 0;
+		myMoney = _myMoney;
 	}
-	public void buyApple(Fruitseller _seller, int _money)
+	public void buyApple(Fruitseller _seller, int _appCount)
 	{
 		
-		
-		int appleCount = _seller.saleApple(_money);
-		numOfApple += appleCount;
-		myMoney -= _seller.applePrice * appleCount;
+		if((_appCount * _seller.applePrice) < myMoney )
+		{
+			int applePrice = _seller.saleApple(_appCount);
+			if(applePrice < 0)
+			{
+				return;
+			}
+			numOfApple += _appCount;
+			myMoney -= applePrice;
+		}
+		else 
+		{
+			System.out.println("\n\n\n ÀÜ¾×ÀÌ ºÎÁ· ÇÕ´Ï´Ù");
+			
+		}
 	}
 	
 	public void showBuyResult()
 	{
-		System.out.println("ÇöÀç ÀÜ¾× : "+this.myMoney);
-		System.out.println("°úÀÏ °¹¼ö : "+this.numOfApple);
+		System.out.println("ÇöÀç ÀÜ¾× : "+myMoney);
+		System.out.println("°úÀÏ °¹¼ö : "+numOfApple);
 	}
 }
