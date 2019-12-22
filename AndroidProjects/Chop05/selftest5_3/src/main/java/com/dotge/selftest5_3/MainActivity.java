@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         final SelfJavaView SJV = new SelfJavaView(getApplicationContext());
         setContentView(R.layout.activity_main);
         SJV.etGenerator("editText");
-        SJV.btnGenerator("button", "버튼", new View.OnClickListener() {
+        SJV.btnGenerator("button", "개판으로", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 EditText ev = SJV.editTextGet("editText");
@@ -33,6 +33,49 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        SJV.btnGenerator("button", "가버리는", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText ev = SJV.editTextGet("editText");
+                TextView tv = SJV.textViewGet("textview");
+                TextView tv2 = SJV.textViewGet("textview2");
+                TextView tv3 = SJV.textViewGet("textview3");
+
+                tv.setText(ev.getText().toString());
+                tv2.setText("2번쨰");
+                tv3.setText("3번쨰");
+
+            }
+        });
+        SJV.btnGenerator("button", "버튼 ", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText ev = SJV.editTextGet("editText");
+                TextView tv = SJV.textViewGet("textview");
+                TextView tv2 = SJV.textViewGet("textview2");
+                TextView tv3 = SJV.textViewGet("textview3");
+
+                tv.setText(ev.getText().toString());
+                tv2.setText("2번쨰");
+                tv3.setText("3번쨰");
+
+            }
+        });
+        SJV.btnGenerator("button", "개판 ", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText ev = SJV.editTextGet("editText");
+                TextView tv = SJV.textViewGet("textview");
+                TextView tv2 = SJV.textViewGet("textview2");
+                TextView tv3 = SJV.textViewGet("textview3");
+
+                tv.setText(ev.getText().toString());
+                tv2.setText("2번쨰");
+                tv3.setText("3번쨰");
+
+            }
+        });
+
         SJV.tvGenerator("textview");
 ; SJV.tvGenerator("textview2");
         SJV.tvGenerator("textview3");

@@ -1,9 +1,11 @@
 package com.dotge.selftest5_3;
 
+import android.graphics.Color;
 import android.widget.TextView;
 
 public class SelfTextView {
     private String Id;
+    private int color;
     private TextView textView;
 
     public String getId() {
@@ -21,4 +23,10 @@ public class SelfTextView {
     public void setTextView(TextView textView) {
         this.textView = textView;
     }
+
+    public void setColor(int _color)
+    {
+        color = _color;
+    }
+
 }
