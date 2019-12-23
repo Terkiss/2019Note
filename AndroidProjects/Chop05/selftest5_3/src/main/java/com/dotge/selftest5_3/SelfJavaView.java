@@ -94,6 +94,7 @@ public class SelfJavaView {
 
 
 
+
     public void btnGenerator(String Id, String txtName, View.OnClickListener _Onclick)
     {
         Button btn_Temp = new Button(_context);
@@ -112,6 +113,28 @@ public class SelfJavaView {
         callSquence[count] = "btn";
         count++;
     }
+
+    public void btnGenerator(String Id, int width, int height, String txtName, View.OnClickListener _Onclick)
+    {
+        Button btn_Temp = new Button(_context);
+
+        btn_Temp.setText(txtName);
+
+        btn_Temp.layout(10,10,10,10);
+        btn_Temp.setOnClickListener(_Onclick);
+
+        SelfButton sbtn = new SelfButton();
+        sbtn.setId(Id);
+        sbtn.setButton(btn_Temp);
+
+        btn.add(sbtn);
+
+        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
+        ll.addView(sbtn.getButton(), _param);
+    }
+
+
+
     public void tvGenerator(String id)
     {
        TextView tv_Temp = new TextView(_context);
@@ -122,6 +145,21 @@ public class SelfJavaView {
        callSquence[count] = "tv";
        count++;
     }
+    public void tvGenerator(String id, int width, int height)
+    {
+        TextView tv_Temp = new TextView(_context);
+        SelfTextView _Stv = new SelfTextView();
+        _Stv.setId(id);
+        _Stv.setTextView(tv_Temp);
+        tv.add(_Stv);
+
+        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
+        ll.addView(_Stv.getTextView(), _param);
+    }
+
+
+
+
     public void etGenerator(String id)
     {
         EditText ev_Temp = new EditText(_context);
@@ -133,6 +171,24 @@ public class SelfJavaView {
         callSquence[count] = "et";
         count++;
     }
+    public void etGenerator(String id, int width, int height)
+    {
+        EditText ev_Temp = new EditText(_context);
+        SelfEditText _Set = new SelfEditText();
+
+        _Set.setId(id);
+        _Set.setEditText(ev_Temp);
+        et.add(_Set);
+
+        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
+        ll.addView(_Set.getEditText(), _param);
+    }
+
+
+
+
+
+
     public LinearLayout linearLayoutAddWidget()
     {
         int indexOfTextView=0;
