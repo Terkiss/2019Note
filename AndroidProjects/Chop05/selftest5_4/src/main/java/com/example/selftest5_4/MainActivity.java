@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
                 imageView2.setImageResource(0);
                 imageView1.invalidate();
                 imageView2.invalidate();
+
+
             }
         });
 

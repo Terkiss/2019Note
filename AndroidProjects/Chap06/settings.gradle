@@ -1,0 +1,2 @@
+include ':app', ':completetextedit'
+rootProject.name='Chap06'
