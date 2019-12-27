@@ -1,2 +1,2 @@
-include ':app', ':completetextedit'
+include ':app', ':completetextedit', ':progress_ex'
 rootProject.name='Chap06'
