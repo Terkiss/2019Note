@@ -21,13 +21,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        //getResources().getIdentifier()
+
 
         img1 = findViewById(R.id.imageButton);
 
 
         for(int i = 1 ; i < 14; i++)
         {
+                                                    //      이름                      타입                  패키지명
             int img = getResources().getIdentifier("@drawable/jeju"+i, "drawable",this.getPackageName());
 
             imgarray[i-1] = img;
