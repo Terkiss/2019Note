@@ -1,2 +1,2 @@
-include ':app', ':selftest5_3', ':relativelayout_ex', ':tablelayout_ex', ':gridlayout_ex', ':framelaout_ex', ':selftest5_4'
+include ':app', ':selftest5_3', ':relativelayout_ex', ':tablelayout_ex', ':gridlayout_ex', ':framelaout_ex', ':selftest5_4', ':mytextviewlibrary'
 rootProject.name='Chop05'
