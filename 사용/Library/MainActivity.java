@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,34 +24,34 @@ public class MainActivity extends AppCompatActivity {
             java 코드 작성 및  수정 main xml을 삭해해서 오류 발생
 
          */
-        /*
-        SelfJavaView javaView = new SelfJavaView(getApplicationContext());
+        SelfJavaView javaView = new SelfJavaView(getApplicationContext(),LinearLayout.VERTICAL);
 
-        javaView.btnGenerator("Button", LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT, "버튼",
-                new View.OnClickListener() {
+        javaView.linearLayoutGenerator("Layout1", Color.BLUE, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout layout = javaView.getLinearLayout("Layout1");
+        javaView.tvGenerator("text", "이름을 입력하세요", layout, 0, LinearLayout.LayoutParams.WRAP_CONTENT);
+        TextView textView = javaView.textViewGet("text");
+
+        LinearLayout.LayoutParams params =  (LinearLayout.LayoutParams)textView.getLayoutParams();
+        params.weight = 1.0f;
+        textView.setLayoutParams(params);
+        javaView.etGenerator("editTextView","입력", layout, 0, LinearLayout.LayoutParams.WRAP_CONTENT);
+
+        TextView editText = javaView.editTextGet("editTextView");
+
+        params =  (LinearLayout.LayoutParams)editText.getLayoutParams();
+        params.weight = 1.0f;
+        editText.setLayoutParams(params);
+
+        javaView.btnGenerator("button", LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT, "저장하기", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getApplicationContext(), "코드로 생성한 버튼 입니다", Toast.LENGTH_LONG).show();
-                    }
-                });
-        javaView.linearLayoutGenerator("Linear", 0xFF0000, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
-*/
-        SelfJavaView javaView = new SelfJavaView(getApplicationContext());
-        javaView.tvGenerator("textview", "이름을 입력 하세요",LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT );
-        javaView.textViewGet("textview").setTextColor(Color.RED);
-
-        javaView.etGenerator("edit", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT  );
-        javaView.btnGenerator("Button", LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT, "저장하기",
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(getApplicationContext(), "저장 완료", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), " 저장에 성공 하셧습니다 ", Toast.LENGTH_LONG).show();
                     }
                 });
 
         setContentView(javaView.getLinearLayout());
+
     }
 
 }

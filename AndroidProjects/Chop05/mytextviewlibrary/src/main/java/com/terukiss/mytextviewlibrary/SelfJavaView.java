@@ -1,6 +1,7 @@
 package com.terukiss.mytextviewlibrary;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,109 +13,195 @@ import java.util.ArrayList;
 
 public class SelfJavaView {
 
+    /*
+        안드로이드 UI 생성 클래스 목록
+
+        변수 필드 항목
+
+        생성자
+
+        레이아웃 기능들
+
+        위젯 생성자
+
+        // 위젯 겟터 세터
+     */
+
+    // 필드 항목 시작
     private ArrayList<SelfButton> btn = new ArrayList<SelfButton>();
     private ArrayList<SelfTextView> tv = new ArrayList<SelfTextView>();
     private ArrayList<SelfEditText> et = new ArrayList<SelfEditText>();
-    private ArrayList<SelfLiearLayout> sLL =new ArrayList<SelfLiearLayout>();
-
-    private String[] callSquence = new String[100];
-    private int count =0;
+    private ArrayList<SelfLiearLayout> selfLiearLayouts =new ArrayList<SelfLiearLayout>();
     private LinearLayout ll;
     private Context _context;
-    private LinearLayout.LayoutParams btnParam = new LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
-    );
-    private LinearLayout.LayoutParams tvParam = new LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
-    );
-    private LinearLayout.LayoutParams etParam = new LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
-    );
-    public SelfJavaView(Context a)
+
+    // 필드 항목 끝
+
+    /**
+     *
+     * @param a : 컨텍트
+     * @param orientation : 오리엔테이션
+     */
+    public SelfJavaView(Context a,int orientation )
     {
         ll = new LinearLayout(a);
         _context = a;
-        ll.setOrientation( LinearLayout.VERTICAL);
-        LinearLayout.LayoutParams inputParam = new LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.WRAP_CONTENT
-        );
-        ll.setPadding(10,10,10,10);
 
-        for(int i = 0 ;  i <callSquence.length; i++ )
-        {
-            callSquence[i] = "";
-        }
+        ll.setOrientation( orientation);
+        ll.setPadding(10,10,10,10);
     }
-    public int LinearParm(String a)
+
+
+
+
+    // 레이아웃 기능 구역 시작
+
+    /**
+     * 레이아웃 파람을 만든다.
+     * @param a MATCH 입력시 MATCH_PARENT이며 WRAP 입력시 WRAP_CONTENT 이고 숫자를 입력 시 그 숫자만큼 레이아웃 파람을 배정한다
+     * @return 구해진 파람값을 리턴 한다
+     */
+    public int genParams(String a)
     {
-        if(a.equals("Match"))
+        if(a.equals("MATCH")||(Integer.parseInt(a) == -1))
         {
             return LinearLayout.LayoutParams.MATCH_PARENT;
         }
-        else  {
+        else if(a.equals("WRAP")||(Integer.parseInt(a) == -2))
+        {
             return LinearLayout.LayoutParams.WRAP_CONTENT;
         }
-
-    }
-    public EditText editTextGet(String id)
-    {
-        for(int i = 0 ; i < et.size(); i++)
+        else
         {
-            if(et.get(i).getId().equals(id))
-            {
-                return et.get(i).getEditText();
-            }
+            return Integer.parseInt(a);
         }
-        return null;
     }
-    public TextView textViewGet(String id)
+
+    //레이아웃 기능 구역 끝
+
+    //레이아웃 객체 생성 시작
+
+    /**
+     * 자식 리니어 레이아웃 을 생성 합니다.
+     * @param id 아이디
+     * @param backgroundColor 백그라운드 컬러
+     * @param width  가로 크기
+     * @param height 새로 크기
+     */
+    public void linearLayoutGenerator(String id, int backgroundColor, int width, int height)
     {
-        for(int i = 0 ; i < tv.size(); i++)
+        LinearLayout ev_Temp = new LinearLayout(_context);
+        SelfLiearLayout _Set = new SelfLiearLayout(id);
+
+        _Set.setId(id);
+        _Set.setLinearLayout(ev_Temp);
+
+        ev_Temp.setBackgroundColor(backgroundColor);
+
+        selfLiearLayouts.add(_Set);
+
+        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
+        ll.addView(_Set.getLinearLayout(), _param);
+    }
+
+    //레이아웃 객체 생성 끝
+
+
+    //텍스트뷰 객체 생성 시작
+
+    /**
+     * 텍스트 뷰를 생성하고 최상위 부모 레이아웃 객체에
+     * 자동 으로 붙입니다.
+     * @param id 구분 아이디
+     * @param text  컨텐츠 텍스트
+     * @param width 가로 크기
+     * @param height 새로 크기
+     */
+    public void tvGenerator(String id, String text, int width, int height)
+    {
+        TextView tv_Temp = new TextView(_context);
+        SelfTextView _Stv = new SelfTextView();
+        _Stv.setId(id);
+        _Stv.setTextView(tv_Temp);
+        tv_Temp.setText(text);
+        tv_Temp.setTextColor(Color.BLACK);
+        tv.add(_Stv);
+
+        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
+        ll.addView(_Stv.getTextView(), _param);
+    }
+
+    /**
+     * 텍스트 뷰를 생성하고 최상위 부모 레이아웃 객체에
+     * 자동 으로 붙입니다.
+     * @param id 객체 아이디
+     * @param text 텍스트 뷰 내용
+     * @param parent 부모 레이아웃
+     * @param width 레이아웃
+     * @param height 레이아웃
+     */
+    public void tvGenerator(String id, String text, LinearLayout parent, int width, int height)
+    {
+        TextView tv_Temp = new TextView(_context);
+        SelfTextView _Stv = new SelfTextView();
+        _Stv.setId(id);
+        _Stv.setTextView(tv_Temp);
+        tv_Temp.setText(text);
+
+        tv.add(_Stv);
+        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
+        parent.addView(_Stv.getTextView(),_param);
+    }
+
+
+    //텍스트뷰 객체 생성 끝
+
+
+    //에디트텍스트뷰 객체 생성 시작
+
+
+    public void etGenerator(String id, String hint, int width, int height)
+    {
+        EditText ev_Temp = new EditText(_context);
+        SelfEditText _Set = new SelfEditText();
+
+        _Set.setId(id);
+        _Set.setEditText(ev_Temp);
+
+        if(hint.length() > 0 )
         {
-            if(tv.get(i).getId().equals(id))
-            {
-                return tv.get(i).getTextView();
-            }
+            ev_Temp.setHint(hint);
         }
-        return null;
+
+
+        et.add(_Set);
+
+        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
+        ll.addView(_Set.getEditText(), _param);
     }
-    public Button buttonGet(String id)
+
+    public void etGenerator(String id, String hint, LinearLayout parent, int width, int height)
     {
-        for(int i = 0 ; i < tv.size(); i++)
+        EditText ev_Temp = new EditText(_context);
+        SelfEditText _Set = new SelfEditText();
+
+        _Set.setId(id);
+        _Set.setEditText(ev_Temp);
+
+        if(hint.length() > 0 )
         {
-            if(tv.get(i).getId().equals(id))
-            {
-                return btn.get(i).getButton();
-            }
+            ev_Temp.setHint(hint);
         }
-        return null;
+
+        et.add(_Set);
+
+        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
+        parent.addView(_Set.getEditText(), _param);
     }
 
+    //에디트텍스트뷰 객체 생성 끝
 
-
-
-    public void btnGenerator(String Id, String txtName, View.OnClickListener _Onclick)
-    {
-        Button btn_Temp = new Button(_context);
-
-        btn_Temp.setText(txtName);
-
-        btn_Temp.layout(10,10,10,10);
-        btn_Temp.setOnClickListener(_Onclick);
-
-        SelfButton sbtn = new SelfButton();
-        sbtn.setId(Id);
-        sbtn.setButton(btn_Temp);
-
-        btn.add(sbtn);
-
-        callSquence[count] = "btn";
-        count++;
-    }
+    //버튼 객체 생성 시작
 
     public void btnGenerator(String Id, int width, int height, String txtName, View.OnClickListener _Onclick)
     {
@@ -135,72 +222,56 @@ public class SelfJavaView {
         ll.addView(sbtn.getButton(), _param);
     }
 
-
-
-    public void tvGenerator(String id)
+    public void btnGenerator(String Id, String text, LinearLayout parrent, int width, int height, View.OnClickListener _Onclick)
     {
-       TextView tv_Temp = new TextView(_context);
-       SelfTextView _Stv = new SelfTextView();
-       _Stv.setId(id);
-       _Stv.setTextView(tv_Temp);
-       tv.add(_Stv);
-       callSquence[count] = "tv";
-       count++;
-    }
-    public void tvGenerator(String id, String text, int width, int height)
-    {
-        TextView tv_Temp = new TextView(_context);
-        SelfTextView _Stv = new SelfTextView();
-        _Stv.setId(id);
-        _Stv.setTextView(tv_Temp);
-        tv_Temp.setText(text);
+        Button btn_Temp = new Button(_context);
 
-        tv.add(_Stv);
+        btn_Temp.setText(text);
+
+        btn_Temp.layout(10,10,10,10);
+        btn_Temp.setOnClickListener(_Onclick);
+
+        SelfButton sbtn = new SelfButton();
+        sbtn.setId(Id);
+        sbtn.setButton(btn_Temp);
+
+        btn.add(sbtn);
 
         LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
-        ll.addView(_Stv.getTextView(), _param);
+        ll.addView(sbtn.getButton(), _param);
     }
 
+    //버튼 객체 생성 끝
 
 
 
-    public void etGenerator(String id)
-    {
-        EditText ev_Temp = new EditText(_context);
-        SelfEditText _Set = new SelfEditText();
-
-        _Set.setId(id);
-        _Set.setEditText(ev_Temp);
-        et.add(_Set);
-        callSquence[count] = "et";
-        count++;
-    }
-    public void etGenerator(String id, int width, int height)
-    {
-        EditText ev_Temp = new EditText(_context);
-        SelfEditText _Set = new SelfEditText();
-
-        _Set.setId(id);
-        _Set.setEditText(ev_Temp);
-        et.add(_Set);
-
-        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
-        ll.addView(_Set.getEditText(), _param);
-    }
-    public void linearLayoutGenerator(String id, int backgroundColor, int width, int height)
-    {
-        LinearLayout ev_Temp = new LinearLayout(_context);
-        SelfLiearLayout _Set = new SelfLiearLayout(id,backgroundColor);
-
-        _Set.setId(id);
-        _Set.setLinearLayout(ev_Temp);
-        sLL.add(_Set);
-
-        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
-        ll.addView(_Set.getLinearLayout(), _param);
-    }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    위젯 게터 세터 순서
+    레이아웃
+    텍스트뷰
+    에디트 텍스트 뷰
+    버튼
+     */
+
+    /**
+     * 파라메터에 아무것도 입력하지 않았을시
+     * 최상위 부모 객체를 가져옵니다.
+     * @return
+     */
     public LinearLayout getLinearLayout()
     {
         if(ll == null )
@@ -211,9 +282,96 @@ public class SelfJavaView {
         return ll;
     }
 
+    /**
+     * 파라메터에 아이디를 입력시
+     * 해당 아이디를 가진 리니어 레이아웃을
+     * 가져옵니다.
+     * @param id 아이디
+     * @return
+     */
+    public LinearLayout getLinearLayout(String id)
+    {
+        for(int i = 0; i < selfLiearLayouts.size(); i++)
+        {
+            if(selfLiearLayouts.get(i).getId().equals(id) )
+            {
+                return selfLiearLayouts.get(i).getLinearLayout();
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 텍스트뷰를 가져 옵니다.
+     * @param id 아이디
+     * @return 텍스트 뷰
+     */
+    public TextView textViewGet(String id)
+    {
+        for(int i = 0 ; i < tv.size(); i++)
+        {
+            if(tv.get(i).getId().equals(id))
+            {
+                return tv.get(i).getTextView();
+            }
+        }
+        return null;
+    }
+
+
+    /**
+     * 에디터 텍스트 뷰를 가져옵니다.
+     * @param id 아이디
+     * @return 에디터 텍스트 뷰
+     */
+    public EditText editTextGet(String id)
+    {
+        for(int i = 0 ; i < et.size(); i++)
+        {
+            if(et.get(i).getId().equals(id))
+            {
+                return et.get(i).getEditText();
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 버튼 을 가져 옵니다.
+     * @param id 아이디
+     * @return 버튼
+     */
+    public Button buttonGet(String id)
+    {
+        for(int i = 0 ; i < tv.size(); i++)
+        {
+            if(tv.get(i).getId().equals(id))
+            {
+                return btn.get(i).getButton();
+            }
+        }
+        return null;
+    }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
     public LinearLayout linearLayoutAddWidget()
     {
@@ -244,6 +402,7 @@ public class SelfJavaView {
         }
 
         return ll;
-    }
+    }*/
+
 
 }

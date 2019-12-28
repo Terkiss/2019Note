@@ -25,11 +25,9 @@ public class SelfLiearLayout {
         this.linearLayout.setBackgroundColor(this.backgroundColor);
     }
 
-    public SelfLiearLayout(String id, int backgroundColor )
+    public SelfLiearLayout(String id )
     {
         this.Id = id;
-        this.backgroundColor = backgroundColor;
-
     }
 
 

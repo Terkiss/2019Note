@@ -4,7 +4,7 @@ import android.widget.TextView;
 
 public class SelfTextView {
     private String Id;
-    private int color;
+
     private TextView textView;
 
     public String getId() {
@@ -23,9 +23,5 @@ public class SelfTextView {
         this.textView = textView;
     }
 
-    public void setColor(int _color)
-    {
-        color = _color;
-    }
 
 }
