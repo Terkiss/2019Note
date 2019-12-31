@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
             left.setLayoutParams(params);
         }
 
-
         selfJavaView.btnGenerator("button2", "사진보기 정지", SecondLayout,  LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,26 +95,16 @@ public class MainActivity extends AppCompatActivity {
             right.setLayoutParams(params);
         }
 
-
-
-
         selfJavaView.viewFlipperGenerator("flipper", -1, -1);
         viewFlipper = selfJavaView.viewFlipperGet("flipper");
 
-        for(int i = 1 ; i < 20; i++)
+        for(int i = 1 ; i < 15; i++)
         {
             //      이름                      타입                  패키지명
             int imgNum = getResources().getIdentifier("@drawable/jeju"+i, "drawable",this.getPackageName());
             selfJavaView.imageViewGenerator("image"+i, viewFlipper, -2, -2, imgNum);
         }
-
-
-
         LinearLayout.LayoutParams _params = new LinearLayout.LayoutParams(-1,-1);
-
         setContentView(FirstLayout, _params);
-
-
-
     }
 }

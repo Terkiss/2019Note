@@ -1,2 +1,2 @@
-include ':app', ':completetextedit', ':progress_ex', ':seekbar_ex'
+include ':app', ':completetextedit', ':progress_ex', ':seekbar_ex', ':animation_scale_ex', ':ratingbar_ex', ':taphost'
 rootProject.name='Chap06'
