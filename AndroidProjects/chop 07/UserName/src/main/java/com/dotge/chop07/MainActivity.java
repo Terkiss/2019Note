@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.GestureDetector;
+import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -117,5 +118,45 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+
+
+
+    long initTime = 0;
+
+    /*
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        if(keyCode == KeyEvent.KEYCODE_BACK)
+        {
+            if( (System.currentTimeMillis() - initTime) > 3000 )
+            {
+                Toast.makeText(getApplicationContext(), "종료 하실려면 한번더 누르세오",Toast.LENGTH_LONG).show();
+                initTime = System.currentTimeMillis();
+            }
+            else
+            {
+                finish();
+            }
+        }
+        return true;
+        //return super.onKeyDown(keyCode, event);
+    }
+*/
+    public void onBackPressed()
+    {
+        if( (System.currentTimeMillis() - initTime) > 3000 )
+        {
+            Toast.makeText(getApplicationContext(), "종료 하실려면 한번더 누르세오",Toast.LENGTH_LONG).show();
+            initTime = System.currentTimeMillis();
+        }
+        else
+        {
+            finish();
+        }
+
+        //super.onBackPressed();
     }
 }

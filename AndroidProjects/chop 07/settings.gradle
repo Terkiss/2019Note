@@ -1,2 +1,2 @@
-include ':UserName'
+include ':UserName', ':orientation_ex'
 rootProject.name='chop 07'

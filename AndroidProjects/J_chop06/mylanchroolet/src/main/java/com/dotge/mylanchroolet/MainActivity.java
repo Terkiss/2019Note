@@ -135,8 +135,7 @@ public class MainActivity extends Activity {
                 // 초기 시작 각도를 update 한다.
                 init_angle = fromAngle;
                 // 지속시간 길수록 느려진다.
-                rAnim.setDuration(15
-                        000);
+                rAnim.setDuration(15000);
                 // 에니메이션이 종료된후 상태를 고정주는 옵션
                 rAnim.setFillEnabled(true);
                 rAnim.setFillAfter(true);
