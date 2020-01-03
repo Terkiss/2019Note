@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 String uri = editText.getText().toString();
 
                 String isNotHttp = uri.substring(0, 8);
-                if(isNotHttp.equals("https://") == false )
+                if(isNotHttp.equals("https://") == false && uri.substring(0, 7).equals("http://") == false  )
                 {
                     uri = "https://" + uri;
                     Toast.makeText(getApplicationContext(), uri, Toast.LENGTH_LONG).show();
@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    //
     class WebBrowser extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
