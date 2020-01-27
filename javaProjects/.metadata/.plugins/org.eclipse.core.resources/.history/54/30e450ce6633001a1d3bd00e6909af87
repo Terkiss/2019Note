@@ -1,0 +1,14 @@
+package library;
+
+import org.apache.commons.lang3.StringUtils;
+
+
+public class javalang {
+
+	public static void main()
+	{
+		String expression = "1+2-3/4*5=?";
+		
+		String[] splitStr = StringUtils.split(expression, "*?-=+");
+	}
+}
