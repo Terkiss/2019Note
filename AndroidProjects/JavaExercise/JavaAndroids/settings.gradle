@@ -1,2 +1,2 @@
-include ':app', ':mysinger'
+include ':app', ':mysinger', ':j_chap16'
 rootProject.name='JavaAndroids'
