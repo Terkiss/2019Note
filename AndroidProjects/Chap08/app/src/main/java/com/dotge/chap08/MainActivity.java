@@ -9,7 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import java.io.Serializable;
+
+public class MainActivity extends AppCompatActivity implements Serializable {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +32,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 ComponentName componentName = new ComponentName("com.dotge.another","com.dotge.another.MainActivity");
                 intent.setComponent(componentName);
-                intent.putExtra("name","Chap08 의 메인 엑티 비티여 ");
+               // intent.putExtra("name","Chap08 의 메인 엑티 비티여 ");
+
+                Person person = new Person("Twice", 22);
+                Person person2 = new Person("F넬", 22);
+                Person person3 = new Person("CHII ARUEL", 22);
+
+                intent.putExtra("p", person);
+                intent.putExtra("p1", person2);
+                intent.putExtra("p2", person3);
                 startActivity(intent);
             }
         });

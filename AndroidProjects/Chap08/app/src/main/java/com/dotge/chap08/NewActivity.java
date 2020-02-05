@@ -32,7 +32,7 @@ public class NewActivity extends AppCompatActivity {
                     sum+=i;
                 }
                 intent.putExtra("sum", sum);
-                intent.putExtra("name", "NewActivity");
+                intent.putExtra("name", "NewActivity"); // 스트링형
                 setResult(RESULT_OK, intent);
                 finish();
             }
