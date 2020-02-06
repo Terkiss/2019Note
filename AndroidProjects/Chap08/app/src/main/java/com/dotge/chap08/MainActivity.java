@@ -2,8 +2,7 @@ package com.dotge.chap08;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.content.ComponentName;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -30,18 +29,25 @@ public class MainActivity extends AppCompatActivity implements Serializable {
 
                 startActivityForResult(intent, 1000 );
                  */
+                /*
                 Intent intent = new Intent();
                 ComponentName componentName = new ComponentName("com.dotge.another","com.dotge.another.MainActivity");
                 intent.setComponent(componentName);
                // intent.putExtra("name","Chap08 의 메인 엑티 비티여 ");
 
-                Person person = new Person("Twice", 22);
-                Person person2 = new Person("F넬", 22);
-                Person person3 = new Person("CHII ARUEL", 22);
+               // Person person =
 
-                intent.putExtra("p", person);
+                Person2 person2 = new Person2("F넬", 16);
+                Person2 person3 = new Person2("CHII ARUEL", 17);
+
+
                 intent.putExtra("p1", person2);
                 intent.putExtra("p2", person3);
+                */
+
+                Intent intent = new Intent();
+                intent.setAction("action.ACTION_ANDROID_STUDY");
+
                 startActivity(intent);
             }
         });

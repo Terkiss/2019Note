@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.dotge.chap08.Person;
+import com.dotge.chap08.Person2;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textView = findViewById(R.id.textView2);
 
+        /*
         Intent intent = getIntent();
 
 
@@ -32,5 +34,21 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("이름 : "+person.getName() +"나이 : "+person.getAge() +"\n");
         textView.append( "이름 : "+person1.getName() +"나이 : "+person1.getAge() +"\n" );
         textView.append( "이름 : "+person2.getName() +"나이 : "+person2.getAge() +"\n" );
+
+         */
+
+        Intent intent = getIntent();
+
+        Person2 person1 = (Person2) intent.getParcelableExtra("p1");
+        Person2 person2 = (Person2) intent.getParcelableExtra("p2");
+
+
+        if(person1 != null&& person2 != null)
+        {
+            textView.setText("이름 : "+person1.getName() +"나이 : "+person1.getAge() +"\n");
+            textView.append( "이름 : "+person2.getName() +"나이 : "+person2.getAge() +"\n" );
+        }
+
+
     }
 }

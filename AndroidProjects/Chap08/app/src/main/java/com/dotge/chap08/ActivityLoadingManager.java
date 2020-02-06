@@ -15,10 +15,7 @@ public class ActivityLoadingManager implements LoadingManager {
 Activity Context대신 이 값을 사용하면 됩니다.
     */
 
-    public ActivityLoadingManager()
-    {
-        Activity.getApplicationContext();
-    }
+
     @Override
     public void loadActivity(String str) {
 

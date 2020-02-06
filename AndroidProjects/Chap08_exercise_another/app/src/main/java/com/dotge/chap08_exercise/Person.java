@@ -1,18 +1,15 @@
-package com.dotge.chap08;
-
-import android.os.Parcel;
+package com.dotge.chap08_exercise;
 
 import java.io.Serializable;
 
 public class Person implements Serializable {
+    public static long serialVersionUID = 00000001L;
 
-    private static final long serialVersionUID = 1000001L;
+    private String name ;
+    private int age;
 
-    Parcel a;
-    String name;
-    int age;
-    String phone;
-    public Person(String name, int age) {
+    public Person(String name, int age)
+    {
         this.name = name;
         this.age = age;
     }
@@ -31,13 +28,5 @@ public class Person implements Serializable {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
     }
 }

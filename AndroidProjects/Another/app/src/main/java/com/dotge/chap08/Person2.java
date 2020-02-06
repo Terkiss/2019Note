@@ -3,10 +3,7 @@ package com.dotge.chap08;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.io.Serializable;
-import java.util.jar.Attributes;
-
-public class Person2  implements Parcelable {
+public class Person2 implements Parcelable {
 
 
     String name;
@@ -70,5 +67,4 @@ public class Person2  implements Parcelable {
             return new Person2[0];
         }
     };
-
 }
