@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     {
         // 명시적
         Intent intent = new Intent();
+
+        //                        컴포넌트 네임             package Name                                          package Name + activity Name
         ComponentName name = new ComponentName("com.dotge.chap08_exercise_another", "com.dotge.chap08_exercise_another.MainActivity");
 
         intent.setComponent(name);
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // 데이터 전송 시리얼 라이즈드 방식
         serializedTest(intent);
 
-
+        // 앱을 실행
         startActivity(intent);
 
     }
