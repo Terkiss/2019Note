@@ -2,6 +2,7 @@ package com.dotge.self10_2;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -231,9 +232,11 @@ public class SelfJavaView {
         sbtn.setButton(btn_Temp);
 
         btn.add(sbtn);
+        selfObjects.add(sbtn);
 
-        LinearLayout.LayoutParams _param =new LinearLayout.LayoutParams(width, height);
+        LinearLayout.LayoutParams _param = new LinearLayout.LayoutParams(width, height);
         ll.addView(sbtn.getButton(), _param);
+
     }
 
     public void buttonGenerator(String Id, String text, LinearLayout parrent, int width, int height, View.OnClickListener _Onclick)
@@ -355,15 +358,17 @@ public class SelfJavaView {
     버튼
      */
 
-    // findViewBy
-    public <T extends SelfObject> T findViewBy(String id)
+    /**
+     * 텍스트뷰 바이 아이디
+     */
+    public <T extends View> T findViewById(String id)
     {
         for(int i = 0 ; i < selfObjects.size(); i++)
         {
             String chk = selfObjects.get(i).getID();
             if(chk.equals(id))
             {
-                return (T)selfObjects.get(i);
+                return (T)selfObjects.get(i).getObject();
             }
         }
         return null;

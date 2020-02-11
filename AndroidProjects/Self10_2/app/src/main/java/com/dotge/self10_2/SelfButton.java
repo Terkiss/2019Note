@@ -1,5 +1,6 @@
 package com.dotge.self10_2;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -30,8 +31,17 @@ public class SelfButton extends SelfObject {
 
     public void setButton(Button button) {
         this.button = button;
+
     }
 
+    public View getObject()
+    {
+        return button;
+    }
+    public void setObject()
+    {
+
+    }
 
 
 }

@@ -5,59 +5,74 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class Calculrate extends AppCompatActivity {
-    RadioGroup radioGroup;
-    EditText edt, edt2;
-    int result ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calculrate);
+        //setContentView(R.layout.activity_calculrate);
 
-        radioGroup = findViewById(R.id.radiogroup);
-        edt = findViewById(R.id.operator1);
-        edt2 = findViewById(R.id.operator2);
-
-    }
-    public void OnCalculate(View v)
-    {
-        int op, op2;
-        op = Integer.parseInt(edt.getText().toString());
-        op2 = Integer.parseInt(edt2.getText().toString());
-        switch (radioGroup.getCheckedRadioButtonId())
-        {
-            case R.id.radioButton: // +
-                result = op+op2;
-                Toast.makeText(getApplicationContext(), "결과는 : "+(op+op2), Toast.LENGTH_LONG).show();
-                break;
-            case R.id.radioButton2: // -
-                result = op-op2;
-                Toast.makeText(getApplicationContext(), "결과는 : "+(op-op2), Toast.LENGTH_LONG).show();
-                break;
-            case R.id.radioButton3: // *
-                result = op*op2;
-                Toast.makeText(getApplicationContext(), "결과는 : "+(op*op2), Toast.LENGTH_LONG).show();
-                break;
-            case R.id.radioButton4: // /
-                result = op/op2;
-                Toast.makeText(getApplicationContext(), "결과는 : "+(op/op2), Toast.LENGTH_LONG).show();
-                break;
-        }
-
-
-        setResult(RESULT_OK);
-        Handler mHandler = new Handler();
-        mHandler.postDelayed(new Runnable()  {
-            public void run() {
-                // 시간 지난 후 실행할 코딩
-                finish();
-
+        SelfJavaView selfJavaView = new SelfJavaView(getApplicationContext(), LinearLayout.VERTICAL);
+        LinearLayout FirstLayout = selfJavaView.getLinearLayout();
+        selfJavaView.buttonGenerator("aa1", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, "리버튼", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
             }
-        }, 5000); // 5초후
+        });
+        selfJavaView.buttonGenerator("aa2", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, "리버튼1", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        selfJavaView.buttonGenerator("aa3", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, "리버튼2", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        selfJavaView.buttonGenerator("aa4", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, "리버튼3", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        selfJavaView.buttonGenerator("aa5", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, "리버튼3", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        selfJavaView.buttonGenerator("a4", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, "리버튼4", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        selfJavaView.buttonGenerator("aa6", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, "리버튼5", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        int a = R.id.bottom;
+
+        LinearLayout.LayoutParams _params = new LinearLayout.LayoutParams(-1,-1);
+        setContentView(selfJavaView.getLinearLayout(), _params );
+        Button aa = selfJavaView.findViewById("a4");
+        aa.setText("ㅋㅋㅋㅋ"); //  해내따
+        Button ab = selfJavaView.findViewById("aa1");
+        ab.setText("자체 자바 UI 생성 라이브러리 FindViewBy 함수 테스트");
+        //aa.setText("aa");
     }
+
+
+
 }

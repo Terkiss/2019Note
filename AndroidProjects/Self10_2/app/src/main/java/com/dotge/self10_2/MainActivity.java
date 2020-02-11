@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
                // intent.putExtra("VoteCount", voteCount);
                 //intent.putExtra("ImageName", imgName);
                // startActivity(intent);
-
                 LoadingForResult(Calculrate.class);
 
             }

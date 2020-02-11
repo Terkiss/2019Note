@@ -2,63 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout22"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Calculrate"
     android:orientation="vertical"
     >
 
-    <EditText
-        android:id="@+id/operator1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="숫자 입력" />
-
-    <EditText
-        android:id="@+id/operator2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="숫자 입력" />
-
-    <RadioGroup
-        android:id="@+id/radiogroup"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="더하기" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="뺴기" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="곱하기" />
-
-        <RadioButton
-            android:id="@+id/radioButton4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="나누기" />
-
-        <Button
-            android:id="@+id/calculate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="계산하기"
-            android:onClick="OnCalculate"
-            />
-    </RadioGroup>
 </LinearLayout>

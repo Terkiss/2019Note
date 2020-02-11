@@ -1,5 +1,6 @@
 package com.dotge.self10_2;
 
+import android.view.View;
 import android.widget.EditText;
 
 public class SelfEditText extends SelfObject  {
@@ -29,5 +30,14 @@ public class SelfEditText extends SelfObject  {
 
     public EditText getEditText() {
         return editText;
+    }
+
+    public View getObject()
+    {
+        return editText;
+    }
+    public void setObject()
+    {
+
     }
 }

@@ -1,7 +1,9 @@
 package com.dotge.self10_2;
 
+import android.view.View;
 import android.widget.ImageView;
 
+/// 이미지 뷰
 public class SelfImageVIew extends SelfObject{
 
     private ImageView imageView;
@@ -28,4 +30,15 @@ public class SelfImageVIew extends SelfObject{
     public void setImageView(ImageView imageView) {
         this.imageView = imageView;
     }
+
+
+    public View getObject()
+    {
+        return imageView;
+    }
+    public void setObject()
+    {
+
+    }
+
 }

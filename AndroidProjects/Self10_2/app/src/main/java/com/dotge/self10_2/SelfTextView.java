@@ -1,5 +1,6 @@
 package com.dotge.self10_2;
 
+import android.view.View;
 import android.widget.TextView;
 
 public class SelfTextView extends SelfObject{
@@ -33,5 +34,13 @@ public class SelfTextView extends SelfObject{
         this.textView = textView;
     }
 
+    public View getObject()
+    {
+        return textView;
+    }
+    public void setObject()
+    {
+
+    }
 
 }

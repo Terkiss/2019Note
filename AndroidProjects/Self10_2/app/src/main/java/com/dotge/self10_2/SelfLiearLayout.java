@@ -1,5 +1,6 @@
 package com.dotge.self10_2;
 
+import android.view.View;
 import android.widget.LinearLayout;
 
 public class SelfLiearLayout extends SelfObject{
@@ -32,6 +33,15 @@ public class SelfLiearLayout extends SelfObject{
     public void setLinearLayout(LinearLayout linearLayout) {
         this.linearLayout = linearLayout;
         this.linearLayout.setBackgroundColor(this.backgroundColor);
+    }
+
+    public View getObject()
+    {
+        return linearLayout;
+    }
+    public void setObject()
+    {
+
     }
 
 
