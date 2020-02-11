@@ -34,6 +34,7 @@ public class SelfButton extends SelfObject {
 
     }
 
+    @Override
     public View getObject()
     {
         return button;

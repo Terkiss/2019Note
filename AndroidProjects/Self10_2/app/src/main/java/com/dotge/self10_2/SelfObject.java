@@ -15,6 +15,7 @@ public abstract class SelfObject {
     {
         ID = id;
     }
+
     public abstract String getID();
     public abstract void setID(String id);
     public abstract View getObject();

@@ -62,6 +62,19 @@ public class Calculrate extends AppCompatActivity {
 
             }
         });
+        selfJavaView.buttonGenerator("aa6", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, "김우진넴", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "샹크스",Toast.LENGTH_LONG).show();
+            }
+        });
+        selfJavaView.buttonGenerator("aa6", LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, "김우진넴2", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "루피찡",Toast.LENGTH_LONG).show();
+            }
+        });
+
         int a = R.id.bottom;
 
         LinearLayout.LayoutParams _params = new LinearLayout.LayoutParams(-1,-1);
@@ -70,6 +83,10 @@ public class Calculrate extends AppCompatActivity {
         aa.setText("ㅋㅋㅋㅋ"); //  해내따
         Button ab = selfJavaView.findViewById("aa1");
         ab.setText("자체 자바 UI 생성 라이브러리 FindViewBy 함수 테스트");
+
+        ab = selfJavaView.findViewById("aa15");
+        ab.setText("원피스");
+
         //aa.setText("aa");
     }
 
