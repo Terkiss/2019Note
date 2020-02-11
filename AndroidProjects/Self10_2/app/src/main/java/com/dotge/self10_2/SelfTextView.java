@@ -21,7 +21,7 @@ public class SelfTextView extends SelfObject{
         return ID;
     }
 
-    public void setId(String id) {
+    public void setID(String id) {
         ID = id;
     }
 

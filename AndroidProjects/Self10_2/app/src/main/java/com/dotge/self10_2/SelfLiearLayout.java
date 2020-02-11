@@ -21,7 +21,7 @@ public class SelfLiearLayout extends SelfObject{
         return ID;
     }
 
-    public void getID(String id) {
+    public void setID(String id) {
         ID = id;
     }
 

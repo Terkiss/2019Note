@@ -107,7 +107,7 @@ public class SelfJavaView {
         SelfLiearLayout _Set = new SelfLiearLayout(id);
 
 
-        _Set.setId(id);
+        _Set.setID(id);
         _Set.setLinearLayout(ev_Temp);
 
         ev_Temp.setBackgroundColor(backgroundColor);
@@ -135,7 +135,7 @@ public class SelfJavaView {
     {
         TextView tv_Temp = new TextView(_context);
         SelfTextView _Stv = new SelfTextView();
-        _Stv.setId(id);
+        _Stv.setID(id);
         _Stv.setTextView(tv_Temp);
         tv_Temp.setText(text);
         tv_Temp.setTextColor(Color.BLACK);
@@ -158,7 +158,7 @@ public class SelfJavaView {
     {
         TextView tv_Temp = new TextView(_context);
         SelfTextView _Stv = new SelfTextView();
-        _Stv.setId(id);
+        _Stv.setID(id);
         _Stv.setTextView(tv_Temp);
         tv_Temp.setText(text);
 
@@ -179,7 +179,7 @@ public class SelfJavaView {
         EditText ev_Temp = new EditText(_context);
         SelfEditText _Set = new SelfEditText();
 
-        _Set.setId(id);
+        _Set.setID(id);
         _Set.setEditText(ev_Temp);
 
         if(hint.length() > 0 )
@@ -199,7 +199,7 @@ public class SelfJavaView {
         EditText ev_Temp = new EditText(_context);
         SelfEditText _Set = new SelfEditText();
 
-        _Set.setId(id);
+        _Set.setID(id);
         _Set.setEditText(ev_Temp);
 
         if(hint.length() > 0 )
@@ -227,7 +227,7 @@ public class SelfJavaView {
         btn_Temp.setOnClickListener(_Onclick);
 
         SelfButton sbtn = new SelfButton();
-        sbtn.setId(Id);
+        sbtn.setID(Id);
         sbtn.setButton(btn_Temp);
 
         btn.add(sbtn);
@@ -246,7 +246,7 @@ public class SelfJavaView {
         btn_Temp.setOnClickListener(_Onclick);
 
         SelfButton sbtn = new SelfButton();
-        sbtn.setId(Id);
+        sbtn.setID(Id);
         sbtn.setButton(btn_Temp);
 
         btn.add(sbtn);
@@ -265,7 +265,7 @@ public class SelfJavaView {
         imageView_Temp.setImageResource(imageNumber);
 
         SelfImageVIew Siv = new SelfImageVIew();
-        Siv.setId(Id);
+        Siv.setID(Id);
         Siv.setImageView(imageView_Temp);
 
         imageVIews.add(Siv);
@@ -281,7 +281,7 @@ public class SelfJavaView {
         imageView_Temp.setImageResource(imageNumber);
 
         SelfImageVIew Siv = new SelfImageVIew();
-        Siv.setId(Id);
+        Siv.setID(Id);
         Siv.setImageView(imageView_Temp);
 
         imageVIews.add(Siv);
@@ -296,7 +296,7 @@ public class SelfJavaView {
         imageView_Temp.setImageResource(imageNumber);
 
         SelfImageVIew Siv = new SelfImageVIew();
-        Siv.setId(Id);
+        Siv.setID(Id);
         Siv.setImageView(imageView_Temp);
 
         imageVIews.add(Siv);
@@ -312,7 +312,7 @@ public class SelfJavaView {
         ViewFlipper viewFlipper = new ViewFlipper(_context);
 
         SelfViewFlipper sVF = new SelfViewFlipper();
-        sVF.setId(id);
+        sVF.setID(id);
         sVF.setViewFlipper(viewFlipper);
         selfViewFlippers.add(sVF);
 
@@ -325,7 +325,7 @@ public class SelfJavaView {
         ViewFlipper viewFlipper = new ViewFlipper(_context);
 
         SelfViewFlipper sVF = new SelfViewFlipper();
-        sVF.setId(id);
+        sVF.setID(id);
         sVF.setViewFlipper(viewFlipper);
         selfViewFlippers.add(sVF);
 
@@ -366,6 +366,7 @@ public class SelfJavaView {
                 return (T)selfObjects.get(i);
             }
         }
+        return null;
     }
 
 
@@ -397,7 +398,7 @@ public class SelfJavaView {
     {
         for(int i = 0; i < selfLiearLayouts.size(); i++)
         {
-            if(selfLiearLayouts.get(i).getId().equals(id) )
+            if(selfLiearLayouts.get(i).getID().equals(id) )
             {
                 return selfLiearLayouts.get(i).getLinearLayout();
             }
@@ -414,7 +415,7 @@ public class SelfJavaView {
     {
         for(int i = 0 ; i < tv.size(); i++)
         {
-            if(tv.get(i).getId().equals(id))
+            if(tv.get(i).getID().equals(id))
             {
                 return tv.get(i).getTextView();
             }
@@ -432,7 +433,7 @@ public class SelfJavaView {
     {
         for(int i = 0 ; i < et.size(); i++)
         {
-            if(et.get(i).getId().equals(id))
+            if(et.get(i).getID().equals(id))
             {
                 return et.get(i).getEditText();
             }
@@ -449,7 +450,7 @@ public class SelfJavaView {
     {
         for(int i = 0 ; i < btn.size(); i++)
         {
-            if(btn.get(i).getId().equals(id))
+            if(btn.get(i).getID().equals(id))
             {
                 return btn.get(i).getButton();
             }
@@ -466,7 +467,7 @@ public class SelfJavaView {
     {
         for(int i  = 0 ; i < selfViewFlippers.size(); i++)
         {
-            if( selfViewFlippers.get(i).getId().equals(id) )
+            if( selfViewFlippers.get(i).getID().equals(id) )
             {
                 return selfViewFlippers.get(i).getViewFlipper();
             }
