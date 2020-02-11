@@ -1,2 +1,2 @@
-include ':app', ':inflator_ex'
+include ':app', ':inflator_ex', ':votingtally'
 rootProject.name='Chap08_exercise'
