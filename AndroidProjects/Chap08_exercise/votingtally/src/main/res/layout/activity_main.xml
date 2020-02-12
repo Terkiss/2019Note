@@ -96,6 +96,7 @@
 
     </LinearLayout>
     <Button
+        android:id="@+id/voteExit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="투표 종료"

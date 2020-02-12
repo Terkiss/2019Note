@@ -2,23 +2,28 @@ package com.terukiss.votingtally;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     int voteRating[];
     String name[]= {"1번", "2번", "3번", "4번", "5번", "6번", "7번", "8번", "9번"};
+    int imgFiled[] = new int[9];
+    ImageView imageView[] = new ImageView[9];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int imgFiled[] = new int[9];
-        ImageView imageView[] = new ImageView[9];
+        Button button = findViewById(R.id.voteExit);
+
+
         voteRating = new int[9];
         for (int i = 0; i < imgFiled.length; i++) {
             //      이름                      타입                  패키지명
@@ -43,6 +48,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         }
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Aggregation.class);
+
+                intent.putExtra("files", imgFiled);
+                intent.putExtra("score", voteRating);
+            }
+        });
 
 
     }
