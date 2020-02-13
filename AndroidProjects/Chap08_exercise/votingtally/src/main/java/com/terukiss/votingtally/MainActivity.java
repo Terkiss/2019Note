@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     voteRating[index]++;
-                    Toast.makeText(getApplicationContext(), name[index]+" : 총" +voteRating[index]+"표",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), name[index]+" : 총" +voteRating[index]+"표",Toast.LENGTH_SHORT).show();
                 }
             });
         }

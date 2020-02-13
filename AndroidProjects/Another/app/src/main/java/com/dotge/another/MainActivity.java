@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        Person2 person1 = (Person2) intent.getParcelableExtra("p1");
-        Person2 person2 = (Person2) intent.getParcelableExtra("p2");
+        Person2 person1 = (Person2) intent.getParcelableExtra("김영준");
+        Person2 person2 = (Person2) intent.getParcelableExtra("Chii Aruel");
 
 
         if(person1 != null&& person2 != null)

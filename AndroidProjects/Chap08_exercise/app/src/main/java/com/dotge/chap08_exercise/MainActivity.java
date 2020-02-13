@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcel;
 import android.view.View;
 import android.widget.Button;
 
@@ -42,7 +43,15 @@ public class MainActivity extends AppCompatActivity {
         intent.setComponent(name);
 
         // 데이터 전송 시리얼 라이즈드 방식
-        serializedTest(intent);
+        //serializedTest(intent);
+
+        // 데이터 전송 파스라블 방식
+       // Parcezable(intent);
+
+
+        // 데이터 전송 번들 방식
+        bundleTest(intent);
+
 
         // 앱을 실행
         startActivity(intent);
@@ -59,8 +68,43 @@ public class MainActivity extends AppCompatActivity {
         Person person = new Person("김영준", 99);
         Person person1 = new Person("Chii Aruel", 16);
 
+        // parcel 객체 생성
+
+
+
+
+
         intent.putExtra("teacher", person);
         intent.putExtra("soulworker", person1);
+
+        return intent;
+    }
+    public Intent Parcezable(Intent intent)
+    {
+        Person2 person = new Person2("김영준", 99);
+        Person2 person1 = new Person2("Chii Aruel", 16);
+
+        //
+
+        intent.putExtra("teacher", person);
+        intent.putExtra("soulworker", person1);
+
+        return intent;
+    }
+
+    public Intent bundleTest(Intent intent)
+    {
+        Person person = new Person("김영준", 99);
+        Person person1 = new Person("Chii Aruel", 16);
+
+        // parcel 객체 생성
+
+
+        Bundle aa = new Bundle();
+        aa.putSerializable("teacher", person);
+        aa.putSerializable("soulworker", person1);
+
+        intent.putExtra("bun", aa);
 
         return intent;
     }

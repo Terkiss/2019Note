@@ -3,7 +3,7 @@ package com.dotge.chap08;
 import java.io.Serializable;
 
 public class Person implements Serializable {
-    private static final long serialVersionUID = 1000000L;
+    private static final long serialVersionUID = 1000001L;
 
     String name;
     int age;

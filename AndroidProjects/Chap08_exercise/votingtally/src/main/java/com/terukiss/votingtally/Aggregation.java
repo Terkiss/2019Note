@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
@@ -35,8 +36,7 @@ public class Aggregation extends AppCompatActivity {
         int voteRating[] = intent.getIntArrayExtra("score");
         String name[] = intent.getStringArrayExtra("name");
 
-        int maxIndex = 0;
-        int maxRaing =0;
+        int max =0;
 
         for(int i = 0 ; i <  voteRating.length; i++)
         {
@@ -45,17 +45,16 @@ public class Aggregation extends AppCompatActivity {
 
             rb[i] = findViewById(rbID[i]);
 
-            if(maxRaing < voteRating[i])
-            {
-                maxRaing = voteRating[i];
-                maxIndex = i;
+            if(voteRating[max]<voteRating[i]){
+                max = i;
             }
+
         }
 
 
         for(int i =0; i < voteRating.length; i++)
         {
-            float rating = voteRating[i]/maxRaing * 5;
+            float rating = voteRating[i];
             rb[i].setRating(rating);
         }
 
@@ -67,6 +66,13 @@ public class Aggregation extends AppCompatActivity {
                 finish();
             }
         });
+
+
+        TextView tvTop = findViewById(R.id.tvTop);
+        ImageView ivTop = findViewById(R.id.ivTop);
+
+        tvTop.setText(textViews[max].getText());
+        ivTop.setImageResource(imgFiled[max]);
 
 
 

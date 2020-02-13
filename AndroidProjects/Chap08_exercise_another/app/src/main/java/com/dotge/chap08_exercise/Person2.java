@@ -3,7 +3,7 @@ package com.dotge.chap08_exercise;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class Person2  implements Parcelable {
+public class Person2 implements Parcelable {
 
     @Override
     public int describeContents() {
@@ -13,15 +13,7 @@ public class Person2  implements Parcelable {
     private String name ;
     private int age;
 
-    public Person2(String name, int age)
-    {
-        this.name = name;
-        this.age = age;
-    }
-    public Person2()
-    {
 
-    }
 
     public String getName() {
         return name;
@@ -48,7 +40,7 @@ public class Person2  implements Parcelable {
         dest.writeInt(age);
     }
 
-    public static final Parcelable.Creator<Person2> CREATOR = new Creator<Person2>() {
+    public static final Creator<Person2> CREATOR = new Creator<Person2>() {
         @Override
         public Person2 createFromParcel(Parcel source) {
             Person2 sampleData = new Person2();
