@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".TaskA2"  ></activity>
-        <activity android:name=".TaskA" android:launchMode="singleTask" />
+        <activity android:name=".TaskA" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

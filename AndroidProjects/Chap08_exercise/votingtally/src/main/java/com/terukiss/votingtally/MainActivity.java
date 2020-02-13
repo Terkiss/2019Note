@@ -56,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
                 intent.putExtra("files", imgFiled);
                 intent.putExtra("score", voteRating);
+                intent.putExtra("name", name);
+
+                startActivity(intent);
             }
         });
 

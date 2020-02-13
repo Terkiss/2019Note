@@ -41,7 +41,9 @@
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right" />
+            android:layout_gravity="right"
+            android:stepSize="0.1"
+            />
     </TableRow>
 
     <TableRow>
@@ -59,6 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             style="@style/Widget.AppCompat.RatingBar.Small"
+            android:stepSize="0.1"
             />
     </TableRow>
 
@@ -77,6 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             style="@style/Widget.AppCompat.RatingBar.Small"
+            android:stepSize="0.1"
             />
     </TableRow>
     <TableRow>
@@ -94,6 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             style="@style/Widget.AppCompat.RatingBar.Small"
+            android:stepSize="0.1"
             />
     </TableRow>
     <TableRow>
@@ -111,6 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             style="@style/Widget.AppCompat.RatingBar.Small"
+            android:stepSize="0.1"
             />
     </TableRow>
 
@@ -121,14 +127,17 @@
             android:textSize="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="TextView"
+
+            />
 
         <RatingBar
             android:id="@+id/rb6"
+            style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:stepSize="0.1"
             />
     </TableRow>
 
@@ -147,6 +156,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             style="@style/Widget.AppCompat.RatingBar.Small"
+            android:stepSize="0.1"
             />
     </TableRow>
     <TableRow>
@@ -164,6 +174,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             style="@style/Widget.AppCompat.RatingBar.Small"
+            android:stepSize="0.1"
             />
     </TableRow>
     <TableRow>
@@ -181,6 +192,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             style="@style/Widget.AppCompat.RatingBar.Small"
+            android:stepSize="0.1"
             />
     </TableRow>
     <TableRow>

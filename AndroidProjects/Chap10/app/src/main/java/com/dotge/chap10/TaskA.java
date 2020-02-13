@@ -28,7 +28,7 @@ public class TaskA extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), TaskA2.class);
                 intent.putExtra("A3", "A2에서 돌렷습니다");
-                intent.addFlags(intent.FLAG_ACTIVITY_SINGLE_TOP);
+               // intent.addFlags(intent.FLAG_ACTIVITY_SINGLE_TOP);
                 //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
                 startActivity(intent);
             }

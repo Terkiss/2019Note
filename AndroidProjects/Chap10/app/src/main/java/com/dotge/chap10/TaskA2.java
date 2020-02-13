@@ -31,6 +31,7 @@ public class TaskA2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), TaskA.class);
                 intent.putExtra("A2", "A2 다시 호출 함");
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
             }
         });
