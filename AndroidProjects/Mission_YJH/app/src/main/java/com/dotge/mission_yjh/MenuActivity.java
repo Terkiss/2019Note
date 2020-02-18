@@ -100,7 +100,7 @@ public class MenuActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data)
     {
         super.onActivityResult(requestCode, resultCode, data);
-        String defaultStr[]     =   {"응답 : ", "result is Ok!"} ;
+        String defaultStr[]     =   {"응답 : ", " result message is Ok!"} ;
 
         if(resultCode == RESULT_OK)
         {
