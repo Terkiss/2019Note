@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(viewPagerAdapter);
         viewPager.setOffscreenPageLimit(names.length);
 
-
     }
 
 
