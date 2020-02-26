@@ -1,2 +1,2 @@
-include ':app', ':viewpager', ':service_ex', ':newmusic'
+include ':app', ':viewpager', ':service_ex', ':newmusic', ':broadcastingtest', ':localbroadcasting', ':broadcast_ex'
 rootProject.name='Chap11'
