@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.terukiss.localbroadcasting">
+    package="com.example.systembroadcast_ex">
 
     <application
         android:allowBackup="true"
@@ -10,13 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <receiver
-            android:name=".OnOffScreen"
+            android:name=".MyBatteryReceiv"
             android:enabled="true"
-            android:exported="true"></receiver>
-        <receiver
-            android:name=".MyReceiver"
-            android:enabled="true"
-            android:exported="true" />
+            android:exported="true">
+
+        </receiver>
 
         <activity android:name=".MainActivity">
             <intent-filter>

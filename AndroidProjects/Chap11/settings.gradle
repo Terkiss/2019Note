@@ -1,2 +1,3 @@
-include ':app', ':viewpager', ':service_ex', ':newmusic', ':broadcastingtest', ':localbroadcasting', ':broadcast_ex', ':notification_ex'
+include ':app', ':viewpager', ':service_ex', ':newmusic', ':broadcastingtest', ':localbroadcasting', ':broadcast_ex', ':notification_ex', ':systembreoadcasting'
 rootProject.name='Chap11'
+include ':systembroadcast_ex'
