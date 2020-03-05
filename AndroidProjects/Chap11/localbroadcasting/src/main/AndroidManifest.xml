@@ -10,13 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <receiver
-            android:name=".OnOffScreen"
-            android:enabled="true"
-            android:exported="true"></receiver>
-        <receiver
             android:name=".MyReceiver"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="true"></receiver>
 
         <activity android:name=".MainActivity">
             <intent-filter>

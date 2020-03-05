@@ -1,0 +1,2 @@
+include ':app', ':recyclerview', ':fragment'
+rootProject.name='Chap12'

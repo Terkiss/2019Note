@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = findViewById(R.id.list); // 리스트뷰
+        listView = findViewById(R.id.list);
         datas = new ArrayList<>();
-        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,datas);  // 어답터 생성
-        listView.setAdapter(adapter); // 어답터 지정
+        adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,datas);
+        listView.setAdapter(adapter);
 
         IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
         Intent batteryStatus = registerReceiver(null,filter);
