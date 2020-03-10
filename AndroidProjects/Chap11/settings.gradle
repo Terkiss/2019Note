@@ -1,2 +1,6 @@
-include ':app', ':viewpager', ':service_ex', ':newmusic', ':broadcastingtest', ':localbroadcasting', ':broadcast_ex', ':notification_ex', ':singlefragment_ex'
+include ':app', ':viewpager', ':service_ex', ':newmusic', ':broadcastingtest', ':localbroadcasting', ':broadcast_ex', ':notification_ex', ':singlefragment_ex', ':system_broadcastreceiver'
 rootProject.name='Chap11'
+include ':notification_ex_jeong'
+include ':playmusicservice'
+include ':alerdialog'
+include ':doublefragment'

@@ -1,4 +1,0 @@
-#Thu Mar 05 01:15:25 KST 2020
-base.0=F\:\\Project\\Java\\beakjeJavaSW\\AndroidProjects\\Chap11\\systembroadcast_ex\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

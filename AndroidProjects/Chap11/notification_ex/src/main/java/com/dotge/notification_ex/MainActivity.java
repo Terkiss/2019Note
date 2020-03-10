@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button progressBtn;
     Button headsupBtn;
     Button messageBtn;
-
+    Button snackBar;
     NotificationManager manager;
     NotificationCompat.Builder builder;
 
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         headsupBtn=findViewById(R.id.lab2_headsup);
         messageBtn=findViewById(R.id.lab2_message);
 
+        // 이클래스에 리스너가 있음
         basicBtn.setOnClickListener(this);
         bigPictureBtn.setOnClickListener(this);
         bigTextBtn.setOnClickListener(this);
@@ -55,28 +56,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         headsupBtn.setOnClickListener(this);
         messageBtn.setOnClickListener(this);
 
-        Button snackBar = findViewById(R.id.snackBar);
-        snackBar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "스낵바 입니당 " , Snackbar.LENGTH_LONG).show();
-            }
-        });
+        snackBar = findViewById(R.id.snackBar);
+        snackBar.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         manager=(NotificationManager)getSystemService(NOTIFICATION_SERVICE);
 
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+        // 빌드 버전이 오레오 일경우
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O)
+        {
+            // 채널 아이디 원 채널
             String channelId = "one-channel";
+
+            // 채널 이름
             String channelName = "My Channel One";
+
+            // 채널 정의
             String channelDescription = "My Channel One Description";
 
+            // 알림 채널
             NotificationChannel channel = null;
 
+
             if(v==headsupBtn){
-                channel=new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_HIGH);
+                channel=new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_LOW);
             }else {
                 channel=new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_DEFAULT);
             }
@@ -165,6 +170,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             builder.setStyle(style);
 
+        }
+        else if(v== snackBar)
+        {
+            Snackbar.make(v, "스낵바 입니다 ",Snackbar.LENGTH_LONG).show();
+            return;
         }
 
         manager.notify(222, builder.build());
