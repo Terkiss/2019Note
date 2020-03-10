@@ -24,6 +24,7 @@
             <option value="$PROJECT_DIR$/singlefragment_ex" />
             <option value="$PROJECT_DIR$/system_broadcastreceiver" />
             <option value="$PROJECT_DIR$/viewpager" />
+            <option value="$PROJECT_DIR$/viewpager_ex" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
