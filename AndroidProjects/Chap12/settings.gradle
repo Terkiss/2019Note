@@ -1,2 +1,2 @@
-include ':app', ':recyclerview', ':fragment'
+include ':app', ':recyclerview', ':fragment', ':recyclerview_ex'
 rootProject.name='Chap12'
