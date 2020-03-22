@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity  {
 
         manager = getSupportFragmentManager();
 
-        mainFragment =new MainFragment();
+        mainFragment = new MainFragment();
         menuFragment = new MenuFragment();
 
 

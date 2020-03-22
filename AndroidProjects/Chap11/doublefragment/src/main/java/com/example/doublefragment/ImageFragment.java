@@ -17,7 +17,16 @@ import android.widget.ImageView;
  * create an instance of this fragment.
  */
 public class ImageFragment extends Fragment {
-   ImageView iv ;
+   ImageView iv ; // 이미지 뷰
+
+
+    /**
+     *
+     * @param inflater 인플레이터
+     * @param container 컨테이너
+     * @param savedInstanceState  세이브 인스텐스
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -27,6 +36,10 @@ public class ImageFragment extends Fragment {
 
         return viewGroup;
     }
+
+    /**
+     * 이미지를 새팅 합니다 .
+    */
     public void setImage(int id)
     {
         Log.d("Jeong", "ImageFragment position :: "+id);

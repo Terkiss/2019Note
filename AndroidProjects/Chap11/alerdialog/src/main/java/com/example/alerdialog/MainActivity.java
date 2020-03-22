@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         edt_Name = findViewById(R.id.editText);
         edt_Email = findViewById(R.id.editText2);
+
         Button button = findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
