@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    >
+
+
+    <Button
+        android:id="@+id/basicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="basicButton"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/bigPictureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bigPictureButton"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:id="@+id/bigTextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bigTextButton"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:id="@+id/inboxStyleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="inboxStyleButton"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:id="@+id/prograssStyleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="prograssStyleButton"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/headSup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="headSup"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:id="@+id/messageStyleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="messageStyleButton"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:id="@+id/snackBarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="snackBarButton"
+        android:layout_marginTop="5dp"
+        />
+</LinearLayout>
