@@ -1,2 +1,2 @@
-include ':app', ':recyclerview', ':fragment', ':recyclerview_ex', ':myapplication', 'recicleview', 'listViewRecycle'
+include ':app', ':recyclerview', ':fragment', ':recyclerview_ex', ':myapplication', ':recyleappbar', ':bottom_sheet_ex', ':navigationdrawbar_ex', 'recicleview', 'listViewRecycle'
 rootProject.name='Chap12'

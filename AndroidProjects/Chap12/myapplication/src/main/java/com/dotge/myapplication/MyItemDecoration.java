@@ -59,7 +59,9 @@ public class MyItemDecoration extends RecyclerView.ItemDecoration {
         }else{
             outRect.set(20,20,20,20);
         }
+
         view.setBackgroundColor(0xFFECE9E9);
+
         ViewCompat.setElevation(view, 20.0f);
     }
 }

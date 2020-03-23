@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navi_camera"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title = "Camera"/>
+
+        <item
+            android:id="@+id/navi_gallery"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title = "gallary"/>
+
+        <item
+            android:id="@+id/navi_slidshow"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title = "slidshow"/>
+
+        <item
+            android:id="@+id/navi_manage"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title = "Camera"/>
+    </group>
+
+    <item android:title="Comunity">
+        <menu>
+            <item
+                android:id="@+id/navi_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title = "share"/>
+
+            <item
+                android:id="@+id/navi_send"
+                android:icon="@android:drawable/ic_menu_send"
+                android:title = "swend"/>
+        </menu>
+    </item>
+</menu>
