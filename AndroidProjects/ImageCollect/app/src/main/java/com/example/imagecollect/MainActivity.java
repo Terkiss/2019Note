@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.ImageView;
 
 import org.jsoup.Jsoup;
@@ -15,9 +16,13 @@ import org.jsoup.select.Elements;
 
 import java.io.InputStream;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    Handler handler = new Handler();  // 외부쓰레드 에서 메인 UI화면을 그릴때 사용
+    Handler handler = new Handler();
+
+
+    // 외부쓰레드 에서 메인 UI화면을 그릴때 사용
 /*
 * 안드로이드의 이미지뷰 (ImageView) 에 인터넷 상의 이미지들을 띄우는 예제입니다.
 
@@ -32,13 +37,15 @@ public class MainActivity extends AppCompatActivity {
 
 출처: https://bitsoul.tistory.com/26 [Happy Programmer~]
 * */
+    public static ArrayList<Item> m_Item = new ArrayList<>();
 
+    JeongLog jeongLog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        JeongLog jeongLog = new JeongLog(this);
+        jeongLog = new JeongLog(this);
 
 
 
@@ -184,5 +191,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    public void OnClick(View view) {
+        int i = 0;
+        for (Item tempData: m_Item)
+        {
+            jeongLog.logD(i+"\nName -> "+tempData.getTitle()+"\n ImageUri -> "+tempData.getImg_url()+"\n DetailUri -> "+tempData.getDetail_link());
+        }
+    }
 }

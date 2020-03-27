@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -11,16 +10,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/bottom_sheet_ex" />
-            <option value="$PROJECT_DIR$/fragment" />
-            <option value="$PROJECT_DIR$/listViewRecycle" />
-            <option value="$PROJECT_DIR$/materialdsign" />
-            <option value="$PROJECT_DIR$/myapplication" />
-            <option value="$PROJECT_DIR$/navigationdrawbar_ex" />
-            <option value="$PROJECT_DIR$/recicleview" />
-            <option value="$PROJECT_DIR$/recyclerview" />
-            <option value="$PROJECT_DIR$/recyclerview_ex" />
-            <option value="$PROJECT_DIR$/recyleappbar" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
