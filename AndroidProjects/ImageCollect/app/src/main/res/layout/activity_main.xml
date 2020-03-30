@@ -20,4 +20,10 @@
         android:text="조회"
         android:onClick="OnClick"
         />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/recyleView1"
+        />
 </LinearLayout>
