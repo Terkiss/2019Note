@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chap08.iml" filepath="$PROJECT_DIR$/Chap08.iml" group="Chap08" />
+      <module fileurl="file://$PROJECT_DIR$/implicit_intent_ex/implicit_intent_ex.iml" filepath="$PROJECT_DIR$/implicit_intent_ex/implicit_intent_ex.iml" group="Chap08/implicit_intent_ex" />
+      <module fileurl="file://$PROJECT_DIR$/implicit_intent_ex2/implicit_intent_ex2.iml" filepath="$PROJECT_DIR$/implicit_intent_ex2/implicit_intent_ex2.iml" group="Chap08/implicit_intent_ex2" />
+      <module fileurl="file://$PROJECT_DIR$/implicit_intent_ex3/implicit_intent_ex3.iml" filepath="$PROJECT_DIR$/implicit_intent_ex3/implicit_intent_ex3.iml" group="Chap08/implicit_intent_ex3" />
+      <module fileurl="file://$PROJECT_DIR$/intent_ex/intent_ex.iml" filepath="$PROJECT_DIR$/intent_ex/intent_ex.iml" group="Chap08/intent_ex" />
+    </modules>
+  </component>
+</project>

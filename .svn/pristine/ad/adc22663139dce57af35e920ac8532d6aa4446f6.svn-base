@@ -1,0 +1,64 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.playmusicservice"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:5:5-80
+11-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:5:22-77
+12
+13    <application
+13-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:7:5-29:19
+14        android:allowBackup="true"
+14-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.1.0] C:\Users\301-00\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:12:9-35
+21        android:theme="@style/AppTheme" >
+21-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:13:9-40
+22        <service
+22-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:14:9-17:47
+23            android:name="com.example.playmusicservice.PlayService"
+23-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:15:13-40
+24            android:enabled="true"
+24-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:16:13-35
+25            android:exported="true" />
+25-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:17:13-36
+26
+27        <activity
+27-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:19:9-28:20
+28            android:name="com.example.playmusicservice.MainActivity"
+28-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:19:19-47
+29            android:resizeableActivity="true"
+29-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:21:13-46
+30            android:windowSoftInputMode="adjustResize|stateHidden" >
+30-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:20:13-67
+31            <intent-filter>
+31-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:23:13-27:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:24:17-69
+32-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:24:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:26:17-77
+34-->D:\BeakjeJavaSw\AndroidProjects\Chap11\playmusicservice\src\main\AndroidManifest.xml:26:27-74
+35            </intent-filter>
+36        </activity>
+37    </application>
+38
+39</manifest>

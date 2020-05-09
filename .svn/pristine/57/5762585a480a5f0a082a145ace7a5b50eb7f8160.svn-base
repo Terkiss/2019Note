@@ -1,0 +1,2 @@
+include ':app', ':inflator_ex', ':votingtally', ':mp3player'
+rootProject.name='Chap08_exercise'

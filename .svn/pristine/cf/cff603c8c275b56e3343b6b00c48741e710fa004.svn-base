@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chap12.iml" filepath="$PROJECT_DIR$/Chap12.iml" group="Chap12" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Chap12/app" />
+      <module fileurl="file://$PROJECT_DIR$/bottom_sheet_ex/bottom_sheet_ex.iml" filepath="$PROJECT_DIR$/bottom_sheet_ex/bottom_sheet_ex.iml" group="Chap12/bottom_sheet_ex" />
+      <module fileurl="file://$PROJECT_DIR$/fragment/fragment.iml" filepath="$PROJECT_DIR$/fragment/fragment.iml" group="Chap12/fragment" />
+      <module fileurl="file://$PROJECT_DIR$/listViewRecycle/listViewRecycle.iml" filepath="$PROJECT_DIR$/listViewRecycle/listViewRecycle.iml" group="Chap12/listViewRecycle" />
+      <module fileurl="file://$PROJECT_DIR$/materialdsign/materialdsign.iml" filepath="$PROJECT_DIR$/materialdsign/materialdsign.iml" group="Chap12/materialdsign" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" group="Chap12/myapplication" />
+      <module fileurl="file://$PROJECT_DIR$/navigationdrawbar_ex/navigationdrawbar_ex.iml" filepath="$PROJECT_DIR$/navigationdrawbar_ex/navigationdrawbar_ex.iml" group="Chap12/navigationdrawbar_ex" />
+      <module fileurl="file://$PROJECT_DIR$/recicleview/recicleview.iml" filepath="$PROJECT_DIR$/recicleview/recicleview.iml" group="Chap12/recicleview" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" group="Chap12/recyclerview" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerview_ex/recyclerview_ex.iml" filepath="$PROJECT_DIR$/recyclerview_ex/recyclerview_ex.iml" group="Chap12/recyclerview_ex" />
+      <module fileurl="file://$PROJECT_DIR$/recyleappbar/recyleappbar.iml" filepath="$PROJECT_DIR$/recyleappbar/recyleappbar.iml" group="Chap12/recyleappbar" />
+    </modules>
+  </component>
+</project>

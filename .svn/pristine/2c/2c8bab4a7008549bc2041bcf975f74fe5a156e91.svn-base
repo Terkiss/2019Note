@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chap06.iml" filepath="$PROJECT_DIR$/Chap06.iml" group="Chap06" />
+      <module fileurl="file://$PROJECT_DIR$/animation_ex/animation_ex.iml" filepath="$PROJECT_DIR$/animation_ex/animation_ex.iml" group="Chap06/animation_ex" />
+      <module fileurl="file://$PROJECT_DIR$/animation_scale_ex/animation_scale_ex.iml" filepath="$PROJECT_DIR$/animation_scale_ex/animation_scale_ex.iml" group="Chap06/animation_scale_ex" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Chap06/app" />
+      <module fileurl="file://$PROJECT_DIR$/completetextedit/completetextedit.iml" filepath="$PROJECT_DIR$/completetextedit/completetextedit.iml" group="Chap06/completetextedit" />
+      <module fileurl="file://$PROJECT_DIR$/progress_ex/progress_ex.iml" filepath="$PROJECT_DIR$/progress_ex/progress_ex.iml" group="Chap06/progress_ex" />
+      <module fileurl="file://$PROJECT_DIR$/ratingbar_ex/ratingbar_ex.iml" filepath="$PROJECT_DIR$/ratingbar_ex/ratingbar_ex.iml" group="Chap06/ratingbar_ex" />
+      <module fileurl="file://$PROJECT_DIR$/seekbar_ex/seekbar_ex.iml" filepath="$PROJECT_DIR$/seekbar_ex/seekbar_ex.iml" group="Chap06/seekbar_ex" />
+      <module fileurl="file://$PROJECT_DIR$/taphost/taphost.iml" filepath="$PROJECT_DIR$/taphost/taphost.iml" group="Chap06/taphost" />
+      <module fileurl="file://$PROJECT_DIR$/webview/webview.iml" filepath="$PROJECT_DIR$/webview/webview.iml" group="Chap06/webview" />
+    </modules>
+  </component>
+</project>

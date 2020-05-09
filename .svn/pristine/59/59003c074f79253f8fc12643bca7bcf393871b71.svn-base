@@ -1,0 +1,2 @@
+include ':UserName', ':orientation_ex', ':homework20200106', ':messenger_intoro'
+rootProject.name='chop 07'

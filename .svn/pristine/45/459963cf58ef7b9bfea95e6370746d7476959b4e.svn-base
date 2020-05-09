@@ -1,0 +1,2 @@
+include ':layoutinflate_ex', ':viewpager_ex', ':service_ex', ':music_service', ':keyboard_control', ':brodcastreceiver_sms', ':local_broadcastreceiver', ':system_broadcastreceiver', ':playmusicservice', ':alerdialog'
+rootProject.name='Chap11'

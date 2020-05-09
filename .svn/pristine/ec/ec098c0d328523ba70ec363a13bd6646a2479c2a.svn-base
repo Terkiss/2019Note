@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.terukiss.broadcast_ex"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+11-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:4:5-71
+11-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:4:22-69
+12
+13    <application
+13-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:5:5-28:19
+14        android:allowBackup="true"
+14-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:6:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.0.1] C:\Users\dl200\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:7:9-43
+18        android:label="@string/app_name"
+18-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:8:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:9:9-54
+20        android:supportsRtl="true"
+20-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:10:9-35
+21        android:theme="@style/AppTheme" >
+21-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:11:9-40
+22        <receiver
+22-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:12:9-19:20
+23            android:name="com.terukiss.broadcast_ex.MySMSReceiver"
+23-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:13:13-42
+24            android:enabled="true"
+24-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:14:13-35
+25            android:exported="true" >
+25-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:15:13-36
+26            <intent-filter android:priority="10000" >
+26-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:16:13-18:29
+26-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:16:28-52
+27                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+27-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:17:13-77
+27-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:17:21-75
+28            </intent-filter>
+29        </receiver>
+30
+31        <activity android:name="com.terukiss.broadcast_ex.MainActivity" >
+31-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:21:9-27:20
+31-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:21:19-47
+32            <intent-filter>
+32-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:22:13-26:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:23:17-69
+33-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:23:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:25:17-77
+35-->F:\Project\Java\beakjeJavaSW\AndroidProjects\Chap11\broadcast_ex\src\main\AndroidManifest.xml:25:27-74
+36            </intent-filter>
+37        </activity>
+38    </application>
+39
+40</manifest>

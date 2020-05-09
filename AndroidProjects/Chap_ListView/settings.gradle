@@ -1,0 +1,5 @@
+rootProject.name='Chap_listView'
+include ':app'
+include ':fileio'
+include ':filegel'
+include ':mypaint'

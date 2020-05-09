@@ -1,0 +1,13 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <a href="Intent://takephoto?photoNumber=1#Intent;scheme=callmyapp;package=com.dotge.myapplink;end">나의앱 사진 1번 실행 </a>
+    </br>    </br>
+    <a href="Intent://takephoto?photoNumber=2#Intent;scheme=callmyapp;package=com.dotge.myapplink;end">나의앱 사진 2번 실행 </a>
+    </br>    </br>
+    <a href="Intent://takephoto?photoNumber=3#Intent;scheme=callmyapp;package=com.dotge.myapplink;end">나의앱 사진 3번 실행 </a>
+    </br>    </br>
+    </body>
+</html>

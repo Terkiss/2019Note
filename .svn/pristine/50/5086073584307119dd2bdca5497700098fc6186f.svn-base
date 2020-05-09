@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bc8616e6-3b89-4aca-b3c0-0d2c637907d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/androidTest/java/com/example/framelaout_ex/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/java/com/example/framelaout_ex/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/drawable/jeju9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../framelaout_ex/src/test/java/com/example/framelaout_ex/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../androidTest/java/com/example/selftest5_4/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/com/example/selftest5_4/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bg_tv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../test/java/com/example/selftest5_4/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../gridlayout_ex/src/main/java/com/example/gridlayout_ex/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../gridlayout_ex/src/main/java/com/example/gridlayout_ex/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../settings.gradle" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="100" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Chop04" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc8616e6-3b89-4aca-b3c0-0d2c637907d2" name="Default Changelist" comment="" />
+      <created>1577162282621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577162282621</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32953104" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+</project>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+
+    <Button
+        android:id="@+id/displaycalb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="화면 밝기 조정"
+        android:textSize="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/displaycalb"
+        android:orientation="vertical"
+        >
+
+        <SeekBar
+            android:id="@+id/seekbar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/displaycalb"
+            android:layout_centerInParent="true"
+            android:max="100"
+            android:progress="100"
+        />
+        <TextView
+            android:id="@+id/resultview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="밝기 수준 :"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

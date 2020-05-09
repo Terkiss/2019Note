@@ -1,0 +1,55 @@
+package exam;
+import java.util.Scanner;
+public class Program {
+	
+	
+	
+	public static void main(String args[])
+	{
+		int mathMetic = 0, english = 0, korean = 0;
+		Scanner sc = new Scanner(System.in);
+		print("국어 점수를 입력 해주세요 : ");
+		korean = sc.nextInt();
+		print("수학 점수를 입력 해주세요 : ");
+		mathMetic = sc.nextInt();
+		
+		print("영어 점수를 입력 해주세요 : ");
+		english = sc.nextInt();
+		
+		if(evalution(korean, mathMetic, english)&&(evalution(korean)&&evalution(english)&&evalution(mathMetic) ) )
+		{
+			print("합격 입니다");
+		}
+		else
+		{
+			print("불 합 격 입니다");
+		}
+		
+		
+	}
+	public static void print(String s)
+	{
+		System.out.print(s);
+	}
+	public static boolean evalution(int point)
+	{
+		if(point >= 40)
+		{
+	
+			return true;
+		}
+		print("과락 입니다 ");
+		return false;
+	}
+	public static boolean evalution(int point, int point2, int point3)
+	{
+		if((point+ point2 + point3) >= 180)
+		{
+			return true;
+		}
+		return false;
+	}
+
+}
+
+

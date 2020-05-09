@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewPlereaper">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="자동보기 시작"
+            android:textSize="15dp"
+
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="자동보기 정지"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/viewImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/viewImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/viewImage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/viewImage4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/viewImage5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/viewImage6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/viewImage7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/viewImage8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/viewImage9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+        </ViewFlipper>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+rootProject.name='FireDB'
+include ':app'
+include ':firebase_memo'
+include ':firebase_storage'
+include ':firestore_ex'
+include ':firebase_auths'

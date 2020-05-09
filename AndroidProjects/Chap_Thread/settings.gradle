@@ -1,0 +1,8 @@
+rootProject.name='Chap_Thread'
+include ':app'
+include ':timerthread'
+include ':messenger'
+include ':asynctest'
+include ':tesst'
+include ':tesst2'
+include ':imagemove'

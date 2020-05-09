@@ -1,0 +1,9 @@
+package library;
+
+public class javalang {
+
+	public static void main()
+	{
+		
+	}
+}

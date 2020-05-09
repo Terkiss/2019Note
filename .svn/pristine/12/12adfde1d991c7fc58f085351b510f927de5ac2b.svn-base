@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chap11.iml" filepath="$PROJECT_DIR$/Chap11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alerdialog/alerdialog.iml" filepath="$PROJECT_DIR$/alerdialog/alerdialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcast_ex/broadcast_ex.iml" filepath="$PROJECT_DIR$/broadcast_ex/broadcast_ex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcastingtest/broadcastingtest.iml" filepath="$PROJECT_DIR$/broadcastingtest/broadcastingtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/doublefragment/doublefragment.iml" filepath="$PROJECT_DIR$/doublefragment/doublefragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/localbroadcasting/localbroadcasting.iml" filepath="$PROJECT_DIR$/localbroadcasting/localbroadcasting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newmusic/newmusic.iml" filepath="$PROJECT_DIR$/newmusic/newmusic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notification_ex/notification_ex.iml" filepath="$PROJECT_DIR$/notification_ex/notification_ex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notification_ex_jeong/notification_ex_jeong.iml" filepath="$PROJECT_DIR$/notification_ex_jeong/notification_ex_jeong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/playmusicservice/playmusicservice.iml" filepath="$PROJECT_DIR$/playmusicservice/playmusicservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service_ex/service_ex.iml" filepath="$PROJECT_DIR$/service_ex/service_ex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/singlefragment_ex/singlefragment_ex.iml" filepath="$PROJECT_DIR$/singlefragment_ex/singlefragment_ex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snackbar_ex/snackbar_ex.iml" filepath="$PROJECT_DIR$/snackbar_ex/snackbar_ex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system_broadcastreceiver/system_broadcastreceiver.iml" filepath="$PROJECT_DIR$/system_broadcastreceiver/system_broadcastreceiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpager/viewpager.iml" filepath="$PROJECT_DIR$/viewpager/viewpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpager_ex/viewpager_ex.iml" filepath="$PROJECT_DIR$/viewpager_ex/viewpager_ex.iml" />
+    </modules>
+  </component>
+</project>

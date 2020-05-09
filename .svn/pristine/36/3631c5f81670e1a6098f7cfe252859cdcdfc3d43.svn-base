@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chap11.iml" filepath="$PROJECT_DIR$/Chap11.iml" group="Chap11" />
+      <module fileurl="file://$PROJECT_DIR$/alerdialog/alerdialog.iml" filepath="$PROJECT_DIR$/alerdialog/alerdialog.iml" group="Chap11/alerdialog" />
+      <module fileurl="file://$PROJECT_DIR$/brodcastreceiver_sms/brodcastreceiver_sms.iml" filepath="$PROJECT_DIR$/brodcastreceiver_sms/brodcastreceiver_sms.iml" group="Chap11/brodcastreceiver_sms" />
+      <module fileurl="file://$PROJECT_DIR$/keyboard_control/keyboard_control.iml" filepath="$PROJECT_DIR$/keyboard_control/keyboard_control.iml" group="Chap11/keyboard_control" />
+      <module fileurl="file://$PROJECT_DIR$/layoutinflate_ex/layoutinflate_ex.iml" filepath="$PROJECT_DIR$/layoutinflate_ex/layoutinflate_ex.iml" group="Chap11/layoutinflate_ex" />
+      <module fileurl="file://$PROJECT_DIR$/local_broadcastreceiver/local_broadcastreceiver.iml" filepath="$PROJECT_DIR$/local_broadcastreceiver/local_broadcastreceiver.iml" group="Chap11/local_broadcastreceiver" />
+      <module fileurl="file://$PROJECT_DIR$/music_service/music_service.iml" filepath="$PROJECT_DIR$/music_service/music_service.iml" group="Chap11/music_service" />
+      <module fileurl="file://$PROJECT_DIR$/playmusicservice/playmusicservice.iml" filepath="$PROJECT_DIR$/playmusicservice/playmusicservice.iml" group="Chap11/playmusicservice" />
+      <module fileurl="file://$PROJECT_DIR$/service_ex/service_ex.iml" filepath="$PROJECT_DIR$/service_ex/service_ex.iml" group="Chap11/service_ex" />
+      <module fileurl="file://$PROJECT_DIR$/system_broadcastreceiver/system_broadcastreceiver.iml" filepath="$PROJECT_DIR$/system_broadcastreceiver/system_broadcastreceiver.iml" group="Chap11/system_broadcastreceiver" />
+      <module fileurl="file://$PROJECT_DIR$/viewpager_ex/viewpager_ex.iml" filepath="$PROJECT_DIR$/viewpager_ex/viewpager_ex.iml" group="Chap11/viewpager_ex" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Chop05.iml" filepath="$PROJECT_DIR$/Chop05.iml" group="Chop05" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Chop05/app" />
+      <module fileurl="file://$PROJECT_DIR$/framelaout_ex/framelaout_ex.iml" filepath="$PROJECT_DIR$/framelaout_ex/framelaout_ex.iml" group="Chop05/framelaout_ex" />
+      <module fileurl="file://$PROJECT_DIR$/gridlayout_ex/gridlayout_ex.iml" filepath="$PROJECT_DIR$/gridlayout_ex/gridlayout_ex.iml" group="Chop05/gridlayout_ex" />
+      <module fileurl="file://$PROJECT_DIR$/homework/homework.iml" filepath="$PROJECT_DIR$/homework/homework.iml" group="Chop05/homework" />
+      <module fileurl="file://$PROJECT_DIR$/mytextviewlibrary/mytextviewlibrary.iml" filepath="$PROJECT_DIR$/mytextviewlibrary/mytextviewlibrary.iml" group="Chop05/mytextviewlibrary" />
+      <module fileurl="file://$PROJECT_DIR$/relativelayout_ex/relativelayout_ex.iml" filepath="$PROJECT_DIR$/relativelayout_ex/relativelayout_ex.iml" group="Chop05/relativelayout_ex" />
+      <module fileurl="file://$PROJECT_DIR$/selftest5_3/selftest5_3.iml" filepath="$PROJECT_DIR$/selftest5_3/selftest5_3.iml" group="Chop05/selftest5_3" />
+      <module fileurl="file://$PROJECT_DIR$/selftest5_4/selftest5_4.iml" filepath="$PROJECT_DIR$/selftest5_4/selftest5_4.iml" group="Chop05/selftest5_4" />
+      <module fileurl="file://$PROJECT_DIR$/tablelayout_ex/tablelayout_ex.iml" filepath="$PROJECT_DIR$/tablelayout_ex/tablelayout_ex.iml" group="Chop05/tablelayout_ex" />
+      <module fileurl="file://$PROJECT_DIR$/webviewtabhost/webviewtabhost.iml" filepath="$PROJECT_DIR$/webviewtabhost/webviewtabhost.iml" group="Chop05/webviewtabhost" />
+    </modules>
+  </component>
+</project>

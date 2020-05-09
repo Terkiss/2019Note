@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cyberkyj.system_broadcastreceiver"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+11-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:5:5-81
+11-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+12-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:6:5-72
+12-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:6:22-69
+13    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:7:5-75
+13-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:7:22-72
+14
+15    <application
+15-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:9:5-37:19
+16        android:allowBackup="true"
+16-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0] C:\Users\301-00\.gradle\caches\transforms-2\files-2.1\7f6c41cc2a14c0fbaa8d0166c17dc544\core-1.1.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:14:9-35
+23        android:theme="@style/AppTheme" >
+23-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:15:9-40
+24        <activity
+24-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:16:9-18:81
+25            android:name="com.cyberkyj.system_broadcastreceiver.DialogActivity"
+25-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:16:19-49
+26            android:label="전화왔습니다~"
+26-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:17:13-36
+27            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+27-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:18:13-69
+28
+29        <receiver
+29-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:20:9-28:20
+30            android:name="com.cyberkyj.system_broadcastreceiver.MyReceiver"
+30-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:21:13-39
+31            android:enabled="true"
+31-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:22:13-35
+32            android:exported="true" >
+32-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:23:13-36
+33            <intent-filter>
+33-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:24:13-27:29
+34                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+34-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:25:17-82
+34-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:25:25-79
+35                <action android:name="android.intent.action.PHONE_STATE" />
+35-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:26:17-76
+35-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:26:25-73
+36            </intent-filter>
+37        </receiver>
+38
+39        <activity android:name="com.cyberkyj.system_broadcastreceiver.MainActivity" >
+39-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:30:9-36:20
+39-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:30:19-47
+40            <intent-filter>
+40-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:31:13-35:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:32:17-69
+41-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:32:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:34:17-77
+43-->D:\BeakjeJavaSw\AndroidProjects\Chap11\system_broadcastreceiver\src\main\AndroidManifest.xml:34:27-74
+44            </intent-filter>
+45        </activity>
+46    </application>
+47
+48</manifest>
